@@ -3,23 +3,98 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Internship programs</title>
   <link rel="stylesheet" href="sass/style.scss">
 </head>
 
 <body>
-  <div data-test="slider">slider</div>
-  <div data-test="about">about</div>
-  <div data-test="programs">programs</div>
-  <div data-test="grant">grant</div>
-  <div data-test="news">news</div>
-  <div data-test="FAQ">FAQ</div>
-  <div data-test="reviews">reviews</div>
-  <div data-test="contacts">contacts</div>
-  <div data-test="form">form</div>
-  <div data-test="footer">footer</div>
+  <div data-test="slider">
+    <header class="header" data-header="">
+      <div class="container">
+        <div class="header__row-wrapper">
+          <div class="header__logo-wrapper">
+            <img class="header__logo-img" src="img/svg/logo.svg" width="52" height="52" alt="">
+          </div>
+          <button class="header__burger" type="button" aria-label="Переключатель отображения меню" data-burger="">
+            <span class="header__burger-text">Меню</span>
+          </button>
+        </div>
+        <nav class="header__nav" data-content="burger">
+          <ul class="header__list list">
+            <li class="header__item">
+              <a class="header__link" href="#">О проекте</a>
+            </li>
+            <li class="header__item">
+              <div class="header-accordion" data-accordion="parent" data-close-inner="">
+                <div class="header-accordion__element" data-accordion="element">
+                  <button class="header-accordion__button header__accordion-link" type="button" data-accordion="button">Программы</button>
+                  <div class="header-accordion__content" data-accordion="content">
+                    <ul class="header-accordion__list list">
+                      <li class="header-accordion__sub-item">
+                        <a class="header-accordion__sub-link" href="#">Стажировки</a>
+                      </li>
+                      <li class="header-accordion__sub-item">
+                        <a class="header-accordion__sub-link" href="#">Волонтёрство</a>
+                      </li>
+                      <li class="header-accordion__sub-item">
+                        <a class="header-accordion__sub-link" href="#">Учёба</a>
+                      </li>
+                      <li class="header-accordion__sub-item">
+                        <a class="header-accordion__sub-link" href="#">Религия</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">как поехать</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">отзывы</a>
+            </li>
+            <li class="header__item">
+              <div class="header-accordion" data-accordion="parent" data-close-inner="">
+                <div class="header-accordion__element" data-accordion="element">
+                  <button class="header__accordion-link header-accordion__button" type="button" data-accordion="button">Новости</button>
+                  <div class="header-accordion__content" data-accordion="content">
+                    <ul class="header-accordion__list list">
+                      <li class="header-accordion__sub-item">
+                        <a class="header-accordion__sub-link" href="#">Новость 1</a>
+                      </li>
+                      <li class="header-accordion__sub-item">
+                        <a class="header-accordion__sub-link" href="#">Новость 2</a>
+                      </li>
+                      <li class="header-accordion__sub-item">
+                        <a class="header-accordion__sub-link" href="#">Новость 3</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </div>
+  <main class="main">
+    <div data-test="about">about</div>
+    <div data-test="programs">programs</div>
+    <div data-test="grant">grant</div>
+    <div data-test="news">news</div>
+    <div data-test="FAQ">FAQ</div>
+    <div data-test="reviews">reviews</div>
+    <div data-test="contacts">contacts</div>
+    <div data-test="form">form</div>
+  </main>
+  <div data-test="footer">
+    footer
+  </div>
   <script type="module" src="js/main.js"></script>
 </body>
 

@@ -1,0 +1,7 @@
+.main {
+  margin-top: 94px;
+
+  @include vp-mobile {
+    margin-top: 84px;
+  }
+}

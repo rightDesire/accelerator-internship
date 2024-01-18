@@ -2,3 +2,23 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+@import "vendor/accordion/accordion";
+@import "vendor/accordion/data-accordion";
+
+// Global
+// ---------------------------------
+
+@import "variables";
+@import "mixins";
+@import "global/fonts";
+@import "global/reboot";
+@import "global/utils";
+@import "global/container";
+
+// Blocks
+// ---------------------------------
+
+@import "blocks/list";
+@import "blocks/header";
+@import "blocks/main";
+@import "blocks/header-accordion";
