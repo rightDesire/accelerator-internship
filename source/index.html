@@ -9,6 +9,7 @@
 </head>
 
 <body>
+  <h1 class="visually-hidden">Программа стажировки</h1>
   <div data-test="slider">
     <header class="header" data-header="">
       <div class="container">
@@ -28,7 +29,7 @@
             <li class="header__item">
               <div class="header-accordion" data-accordion="parent" data-close-inner="">
                 <div class="header-accordion__element" data-accordion="element">
-                  <button class="header-accordion__button header__accordion-link" type="button" data-accordion="button">Программы</button>
+                  <button class="header-accordion__button header__accordion-link" type="button" data-accordion="button"><span>Программы</span></button>
                   <div class="header-accordion__content" data-accordion="content">
                     <ul class="header-accordion__list list">
                       <li class="header-accordion__sub-item">
@@ -81,6 +82,106 @@
         </nav>
       </div>
     </header>
+    <section class="hero">
+      <h2 class="visually-hidden">Возможности</h2>
+      <div class="swiper hero-swiper" data-swiper="hero">
+        <div class="container hero-swiper__pagination-wrapper">
+          <div class="hero-swiper__pagination swiper-pagination" data-pagination="hero"></div>
+        </div>
+        <div class="swiper-wrapper hero-swiper__wrapper">
+          <div class="swiper-slide hero-slide">
+            <div class="hero-slide__img-wrapper">
+              <picture>
+                <source media="(max-width: 767px)" type="image/webp" srcset="img/content/hero/hero-img-mobile-3@1x.webp 1x, img/content/hero/hero-img-mobile-3@2x.webp 2x">
+                <source media="(max-width: 1399px)" type="image/webp" srcset="img/content/hero/hero-img-tablet-3@1x.webp 1x, img/content/hero/hero-img-tablet-3@2x.webp 2x">
+                <source type="image/webp" srcset="img/content/hero/hero-img-desktop-3@1x.webp 1x, img/content/hero/hero-img-desktop-3@2x.webp 2x">
+
+                <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/hero/hero-img-mobile-3@1x.jpg 1x, img/content/hero/hero-img-mobile-3@2x.jpg 2x">
+                <source media="(max-width: 1399px)" type="image/jpg" srcset="img/content/hero/hero-img-tablet-3@1x.jpg 1x, img/content/hero/hero-img-tablet-3@2x.jpg 2x">
+                <img src="img/content/hero/hero-img-desktop-3@1x.jpg" srcset="img/content/hero/hero-img-desktop-3@2x.jpg 2x" width="1440" height="800" alt="Девушка на фоне здания.">
+              </picture>
+            </div>
+            <div class="container hero-slide__container">
+              <div class="hero-slide__text-content">
+                <h3>
+                  Глобальный профессиональный опыт обучения за рубежом
+                </h3>
+              </div>
+              <div class="hero-slide__row-wrapper">
+                <div class="hero-slide__text-content">
+                  <p>
+                    Погрузитесь в академическую программу, проходя практику в разных городах, ощущая настоящий студенческий стиль жизни!
+                  </p>
+                </div>
+                <div class="hero-slide__btn-wrapper">
+                  <a class="hero-slide__btn btn" href="#"><span>Подробнее</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide hero-slide">
+            <div class="hero-slide__img-wrapper">
+              <picture>
+                <source media="(max-width: 767px)" type="image/webp" srcset="img/content/hero/hero-img-mobile-2@1x.webp 1x, img/content/hero/hero-img-mobile-2@2x.webp 2x">
+                <source media="(max-width: 1399px)" type="image/webp" srcset="img/content/hero/hero-img-tablet-2@1x.webp 1x, img/content/hero/hero-img-tablet-2@2x.webp 2x">
+                <source type="image/webp" srcset="img/content/hero/hero-img-desktop-2@1x.webp 1x, img/content/hero/hero-img-desktop-2@2x.webp 2x">
+
+                <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/hero/hero-img-mobile-2@1x.jpg 1x, img/content/hero/hero-img-mobile-2@2x.jpg 2x">
+                <source media="(max-width: 1399px)" type="image/jpg" srcset="img/content/hero/hero-img-tablet-2@1x.jpg 1x, img/content/hero/hero-img-tablet-2@2x.jpg 2x">
+                <img src="img/content/hero/hero-img-desktop-2@1x.jpg" srcset="img/content/hero/hero-img-desktop-2@2x.jpg 2x" width="1440" height="800" alt="Группа людей.">
+              </picture>
+            </div>
+            <div class="container hero-slide__container">
+              <div class="hero-slide__text-content">
+                <h3>
+                  Волонтёрские программы – внесите свой вклад в общество
+                </h3>
+              </div>
+              <div class="hero-slide__row-wrapper">
+                <div class="hero-slide__text-content">
+                  <p>
+                    Возможности для преподавания, органического сельского хозяйства, устойчивого образа жизни и другое.
+                  </p>
+                </div>
+                <div class="hero-slide__btn-wrapper">
+                  <a class="hero-slide__btn btn" href="#"><span>Подробнее</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide hero-slide">
+            <div class="hero-slide__img-wrapper">
+              <picture>
+                <source media="(max-width: 767px)" type="image/webp" srcset="img/content/hero/hero-img-mobile-1@1x.webp 1x, img/content/hero/hero-img-mobile-1@2x.webp 2x">
+                <source media="(max-width: 1399px)" type="image/webp" srcset="img/content/hero/hero-img-tablet-1@1x.webp 1x, img/content/hero/hero-img-tablet-1@2x.webp 2x">
+                <source type="image/webp" srcset="img/content/hero/hero-img-desktop-1@1x.webp 1x, img/content/hero/hero-img-desktop-1@2x.webp 2x">
+
+                <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/hero/hero-img-mobile-1@1x.jpg 1x, img/content/hero/hero-img-mobile-1@2x.jpg 2x">
+                <source media="(max-width: 1399px)" type="image/jpg" srcset="img/content/hero/hero-img-tablet-1@1x.jpg 1x, img/content/hero/hero-img-tablet-1@2x.jpg 2x">
+                <img src="img/content/hero/hero-img-desktop-1@1x.jpg" srcset="img/content/hero/hero-img-desktop-1@2x.jpg 2x" width="1440" height="800" alt="Работники в офисе.">
+              </picture>
+            </div>
+            <div class="container hero-slide__container">
+              <div class="hero-slide__text-content">
+                <h3>
+                  Программы стажировок в крупнейших компаниях мира
+                </h3>
+              </div>
+              <div class="hero-slide__row-wrapper">
+                <div class="hero-slide__text-content">
+                  <p>
+                    Получите незаменимый опыт работы в ведущих мировых компаниях и государственных организациях.
+                  </p>
+                </div>
+                <div class="hero-slide__btn-wrapper">
+                  <a class="hero-slide__btn btn" href="#"><span>Подробнее</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
   <main class="main">
     <div data-test="about">about</div>
@@ -95,6 +196,7 @@
   <div data-test="footer">
     footer
   </div>
+  <script type="module" src="js/vendor.js"></script>
   <script type="module" src="js/main.js"></script>
 </body>
 

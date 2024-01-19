@@ -48,7 +48,6 @@ export const burger = (ScrollLock, FocusLock) => {
     }
   });
 
-  // Close the menu when clicking outside the menu
   body.addEventListener('click', (event) => {
     if (!header.contains(event.target) && !burgerButton.contains(event.target)) {
       header.classList.remove('is-open');

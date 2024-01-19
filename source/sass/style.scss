@@ -4,6 +4,8 @@
 @import "vendor/normalize";
 @import "vendor/accordion/accordion";
 @import "vendor/accordion/data-accordion";
+@import "swiper/css/bundle";
+@import "vendor/swiper"; /*Переписывает стили*/
 
 // Global
 // ---------------------------------
@@ -19,6 +21,8 @@
 // ---------------------------------
 
 @import "blocks/list";
+@import "blocks/btn";
 @import "blocks/header";
-@import "blocks/main";
 @import "blocks/header-accordion";
+@import "blocks/hero-swiper";
+@import "blocks/hero-slide";

@@ -8,7 +8,7 @@
 }
 
 .header-accordion__element.is-active .header-accordion__content {
-  margin-top: 20px;
+  margin-top: 14px; // Подгон
 }
 
 .header-accordion__sub-item {
@@ -16,7 +16,12 @@
 }
 
 .header-accordion__sub-item:not(:last-child) {
-  margin-bottom: 16px;
+  margin-bottom: 4px; // Подгон
+}
+
+.header-accordion__sub-link {
+  max-width: 130px;
+  word-wrap: break-word;
 }
 
 .header-accordion__button {
@@ -32,4 +37,10 @@
     opacity: 1;
     transform: scaleY(1);
   }
+}
+
+.header-accordion__button span {
+  max-width: 130px;
+  text-align: start;
+  word-wrap: break-word;
 }

@@ -1,0 +1,43 @@
+.btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 196px;
+  min-height: 54px;
+  padding: 4px;
+  padding-left: 20px;
+  color: $color-additional-text;
+  background-color: $color-default-white;
+  border: 1px solid $color-additional-text;
+  border-radius: 30px;
+  cursor: pointer;
+
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 46px;
+    height: 46px;
+    min-width: 46px;
+    border-radius: 44px;
+    background-color: $color-additional-text;
+    background-image: url("/img/svg/arrow-btn.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  &--alt {
+    color: $color-default-white;
+    background-color: $color-additional-text;
+  }
+}
+
+.btn span {
+  max-width: 87px;
+  word-wrap: break-word;
+
+  @include vp-mobile {
+    max-width: 74px;
+  }
+}

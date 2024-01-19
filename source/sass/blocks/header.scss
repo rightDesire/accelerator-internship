@@ -30,6 +30,12 @@
   height: 54px;
 }
 
+.header.is-open .header__row-wrapper {
+  @include vp-mobile {
+    justify-content: end;
+  }
+}
+
 .header.is-open .header__logo-wrapper {
   @include vp-mobile {
     display: none;
@@ -45,7 +51,7 @@
   justify-content: space-between;
   align-items: center;
   width: 134px;
-  height: 54px;
+  min-height: 54px;
   padding: 4px;
   padding-left: 20px;
   color: $color-additional-text;
@@ -68,17 +74,38 @@
     display: block;
     width: 46px;
     height: 46px;
+    min-height: 46px;
     border-radius: 44px;
     background-color: $color-additional-text;
     background-image: url("/img/svg/menu-close.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    transition: background-color 0.3s ease, background-image 0.3s ease; /* Плавное изменение цвета и изображения фона */
+    transition: background-color 0.3s ease, background-image 0.3s ease;
   }
+
+  @include focus {
+    outline: none;
+    opacity: 0.95;
+  }
+
+  &:focus-visible {
+    outline: none;
+    opacity: 0.95;
+  }
+}
+
+.header__burger-text {
+  display: flex;
+  align-items: center;
+  width: 44px;
+  min-height: 20px;
+  white-space: nowrap;
+  overflow-x: auto;
 }
 
 .header.is-open .header__burger {
   width: 286px;
+  min-height: 54px;
   color: $color-default-white;
   background-color: $color-additional-text;
 
@@ -111,7 +138,7 @@
   clip-path: inset(100%);
 
   @include vp-mobile {
-    transform: translateX(-100%);
+    transform: translateX(100%);
   }
 }
 
@@ -123,13 +150,15 @@
   margin-top: 4px;
   margin-left: auto;
   padding: 35px 25px;
-  min-height: 338px;
+  max-height: 398px;
+  min-height: 283px;
   transform: translateX(0);
   opacity: 1;
   overflow: auto;
   white-space: normal;
   clip: auto;
   clip-path: none;
+  overflow-y: auto;
 
   @include vp-mobile {
     width: 100%;
@@ -144,13 +173,21 @@
   @include hover-focus {
     opacity: 1;
   }
+
+  &:focus-visible {
+    outline: unset;
+    opacity: 1;
+  }
 }
 
 .header__item:not(:last-child) {
-  margin-bottom: 28px;
+  margin-bottom: 17px; // Подгон
 }
 
 .header__link {
+  max-width: 130px;
+  word-wrap: break-word;
+
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
@@ -179,6 +216,7 @@
     display: block;
     width: 12px;
     height: 12px;
+    min-width: 12px;
     margin-left: 10px;
     background-image: url("../../img/svg/arrow.svg");
   }

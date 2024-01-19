@@ -1,0 +1,238 @@
+.hero-slide {
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: flex-end;
+  width: 100%;
+  min-height: 800px;
+
+  @include vp-tablet {
+    width: 100%;
+    min-height: 1024px;
+  }
+
+  @include vp-mobile {
+    width: 100%;
+    min-height: 568px;
+  }
+}
+
+.hero-slide__img-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.hero-slide__img-wrapper img {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+
+  @include vp-tablet {
+    height: 1024px;
+    min-height: 100%;
+  }
+
+  @include vp-mobile {
+    height: 568px;
+    min-height: 100%;
+  }
+}
+
+.hero-slide__container {
+  margin-top: 347px;
+  padding-top: 100px;
+  padding-bottom: 60px;
+
+  @include vp-tablet {
+    margin-top: 633px;
+  }
+
+  @include vp-mobile {
+    margin-top: 141px;
+    padding-top: 90px;
+    padding-bottom: 20px;
+  }
+}
+
+.hero-slide__row-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+  width: 772px;
+  padding: 0 50px;
+  padding-bottom: 35px;
+  border-radius: 0px 0px 30px 30px;
+  background-color: $color-default-white;
+
+  @include vp-tablet {
+    width: 591px;
+    padding: 0 40px;
+    padding-bottom: 35px;
+  }
+
+  @include vp-mobile {
+    align-items: start;
+    width: auto;
+    flex-direction: column;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 26px;
+    height: 26px;
+    background-image: url("../../img/svg/angle-alt.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    transform: translateX(100%);
+
+    @include vp-mobile {
+      background-image: unset;
+    }
+  }
+}
+
+.hero-slide__text-content {
+  width: min-content;
+
+  font-family: $ff-manrope;
+}
+
+.hero-slide__text-content h3 {
+  width: 968px;
+  margin: 0;
+  padding: 40px 50px 30px 50px;
+  color: $color-additional-text;
+  background-color: $color-default-white;
+  border-radius: 0px 30px 30px 0px;
+  word-wrap: break-word;
+
+  font-size: 54px;
+  font-weight: 400;
+  line-height: 62px;
+
+  @include vp-tablet {
+    width: 659px;
+    padding: 30px 40px 24px 40px;
+
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  @include vp-mobile {
+    width: 290px;
+    padding: 20px 14px 16px 14px;
+    border-radius: 0px 16px 16px 0px;
+
+    font-size: 22px;
+    line-height: 26px;
+  }
+}
+
+.hero-slide__text-content p {
+  width: 446px;
+  margin: 0;
+  word-wrap: break-word;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+
+  @include vp-tablet {
+    width: 285px;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @include vp-mobile {
+    position: relative;
+    width: 261px;
+    padding: 0 14px 15px 14px;
+    background-color: $color-default-white;
+    border-radius: 0px 0px 14px 0px;
+
+    font-size: 14px;
+    line-height: 20px;
+
+    &::after {
+      @include vp-mobile {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        width: 10px;
+        height: 10px;
+        background-image: url("../../img/svg/angle-alt-mobile.svg");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        transform: translateX(100%);
+      }
+    }
+  }
+}
+
+.hero-slide__btn-wrapper {
+  @include vp-mobile {
+    position: relative;
+    width: 182px;
+    padding: 10px 15px;
+    background-color: $color-default-white;
+    border-radius: 0px 0px 14px 14px;
+
+    &::after {
+      content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        width: 10px;
+        height: 10px;
+        background-image: url("../../img/svg/angle-alt-mobile.svg");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        transform: translateX(100%);
+    }
+  }
+}
+
+.hero-slide__btn {
+  padding-left: 30px;
+  column-gap: 30px;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.28px;
+  text-transform: uppercase;
+
+  @include vp-mobile {
+    width: 152px;
+    min-height: 42px;
+    padding-left: 20px;
+    column-gap: 20px;
+
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.24px;
+    text-transform: uppercase;
+
+    &::after {
+      width: 34px;
+      height: 34px;
+      min-width: 34px;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.hero-swiper {
+  position: relative;
+}
+
+.hero-swiper__wrapper {
+
+}
+
+.hero-swiper__pagination-wrapper {
+  position: relative;
+  top: 409px;
+
+  @include vp-tablet {
+    top: 695px;
+  }
+
+  @include vp-mobile {
+    top: 204px;
+  }
+}
+
+.hero-swiper__pagination-wrapper > .hero-swiper__pagination {
+  width: 94px;
+  height: 38px;
+  border-radius: 20px 20px 0px 0px;
+  background-color: $color-default-white;
+
+  @include vp-mobile {
+    width: 80px;
+    height: 28px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../../img/svg/angle.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    transform: translateX(100%);
+
+    @include vp-mobile {
+      width: 10px;
+      height: 10px;
+      background-image: url("../../img/svg/angle-mobile.svg");
+    }
+  }
+}
