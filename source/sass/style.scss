@@ -5,7 +5,8 @@
 @import "vendor/accordion/accordion";
 @import "vendor/accordion/data-accordion";
 @import "swiper/css/bundle";
-@import "vendor/swiper"; /*Переписывает стили*/
+@import "vendor/modal";
+@import "vendor/custom-select";
 
 // Global
 // ---------------------------------
@@ -22,7 +23,13 @@
 
 @import "blocks/list";
 @import "blocks/btn";
+@import "blocks/swiper"; /*Переписывает стили*/
 @import "blocks/header";
 @import "blocks/header-accordion";
 @import "blocks/hero-swiper";
 @import "blocks/hero-slide";
+@import "blocks/modal"; /*Переписывает стили*/
+@import "blocks/contact-form";
+@import "blocks/custom-select"; /*Переписывает стили*/
+@import "blocks/about";
+@import "blocks/features";

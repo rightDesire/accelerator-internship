@@ -1,7 +1,4 @@
 .hero-slide {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: flex-end;
   width: 100%;
   min-height: 800px;
 
@@ -143,6 +140,7 @@
 .hero-slide__text-content p {
   width: 446px;
   margin: 0;
+  color: $color-main-text;
   word-wrap: break-word;
 
   font-size: 16px;

@@ -5,6 +5,8 @@ import {initSliders} from './vendor/swiper/init-swipers';
 import {Form} from './vendor/form-validate/form';
 import {ScrollLock} from './utils/scroll-lock';
 import {FocusLock} from './utils/focus-lock';
+import {initModals} from './vendor/modals/init-modals';
+import {CustomSelect} from './vendor/custom-select/custom-select';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -24,7 +26,10 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     const form = new Form();
+    const select = new CustomSelect();
     window.form = form;
     form.init();
+    select.init();
+    initModals();
   });
 });

@@ -1,0 +1,142 @@
+.features__container {
+  min-height: 442px;
+  padding: 50px 106px;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  padding-left: 126px;
+  color: $color-default-white;
+  background-color: $color-additional-text;
+  border-radius: 20px;
+
+  font-family: $ff-manrope;
+
+  @include vp-tablet {
+    min-height: 480px;
+    padding: 40px;
+    padding-top: 60px;
+    padding-left: 60px;
+  }
+
+  @include vp-mobile {
+    padding: 40px 20px;
+    padding-left: 30px;
+  }
+}
+
+.features__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 52px;
+  row-gap: 54px;
+
+  @include vp-tablet {
+    column-gap: 50px;
+    row-gap: 42px;
+  }
+
+  @include vp-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+}
+
+.features__item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 478px;
+  min-height: 152px;
+  padding: 30px 60px;
+  border: 1px solid $color-dark-theme-text;
+  border-radius: 16px;
+
+  @include vp-tablet {
+    width: auto;
+    min-height: 168px;
+    padding: 30px;
+  }
+
+  @include vp-mobile {
+    min-height: auto;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -21px;
+    left: -21px;
+    display: block;
+    width: 42px;
+    height: 42px;
+    background-color: $color-additional-text;
+    background-image: url("../../img/svg/star.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 22px;
+  }
+}
+
+.features__text-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: self-start;
+  column-gap: 20px; // Тестируем
+
+  @include vp-tablet {
+    flex-direction: column;
+    justify-content: start;
+    row-gap: 12px;
+  }
+}
+
+.features__text-content h4 {
+  max-width: 175px;
+  margin: 0;
+  word-wrap: break-word;
+
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.26px;
+  text-transform: uppercase;
+
+  @include vp-tablet {
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+  }
+
+  @include vp-mobile {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.16px;
+    text-transform: uppercase;
+  }
+}
+
+.features__text-content p {
+  flex-shrink: 1;
+  width: fit-content;
+  max-width: 200px;
+  margin: 0;
+  word-wrap: break-word;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+
+  @include vp-tablet {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @include vp-mobile {
+    // max-width: unset;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

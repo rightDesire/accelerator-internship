@@ -1,6 +1,7 @@
 .header {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
   height: 84px;
   padding-top: 30px;
@@ -31,6 +32,7 @@
 }
 
 .header.is-open .header__row-wrapper {
+  // transform: translateX(-8px);
   @include vp-mobile {
     justify-content: end;
   }
@@ -42,7 +44,7 @@
   }
 }
 
-.header__logo-img {
+.header__logo-wrapper img {
   max-width: none;
 }
 

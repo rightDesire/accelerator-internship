@@ -1,203 +1,328 @@
 <!DOCTYPE html>
 <html lang="ru" data-validate="html">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Internship programs</title>
-  <link rel="stylesheet" href="sass/style.scss">
-</head>
-
-<body>
-  <h1 class="visually-hidden">Программа стажировки</h1>
-  <div data-test="slider">
-    <header class="header" data-header="">
-      <div class="container">
-        <div class="header__row-wrapper">
-          <div class="header__logo-wrapper">
-            <img class="header__logo-img" src="img/svg/logo.svg" width="52" height="52" alt="">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship programs</title>
+    <link rel="stylesheet" href="sass/style.scss">
+  </head>
+  <body>
+    <h1 class="visually-hidden">Программа стажировки</h1>
+    <div data-test="slider">
+      <header class="header" data-header="">
+        <div class="container">
+          <div class="header__row-wrapper">
+            <div class="header__logo-wrapper">
+              <img src="img/svg/logo.svg" width="52" height="52" alt="">
+            </div>
+            <button class="header__burger" type="button" aria-label="Переключатель отображения меню" data-burger="">
+              <span class="header__burger-text">Меню</span>
+            </button>
           </div>
-          <button class="header__burger" type="button" aria-label="Переключатель отображения меню" data-burger="">
-            <span class="header__burger-text">Меню</span>
+          <nav class="header__nav" data-content="burger">
+            <ul class="header__list list">
+              <li class="header__item">
+                <a class="header__link" href="#">О проекте</a>
+              </li>
+              <li class="header__item">
+                <div class="header-accordion" data-accordion="parent" data-close-inner="">
+                  <div class="header-accordion__element" data-accordion="element">
+                    <button class="header-accordion__button header__accordion-link" type="button" data-accordion="button"><span>Программы</span></button>
+                    <div class="header-accordion__content" data-accordion="content">
+                      <ul class="header-accordion__list list">
+                        <li class="header-accordion__sub-item">
+                          <a class="header-accordion__sub-link" href="#">Стажировки</a>
+                        </li>
+                        <li class="header-accordion__sub-item">
+                          <a class="header-accordion__sub-link" href="#">Волонтёрство</a>
+                        </li>
+                        <li class="header-accordion__sub-item">
+                          <a class="header-accordion__sub-link" href="#">Учёба</a>
+                        </li>
+                        <li class="header-accordion__sub-item">
+                          <a class="header-accordion__sub-link" href="#">Религия</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">как поехать</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">отзывы</a>
+              </li>
+              <li class="header__item">
+                <div class="header-accordion" data-accordion="parent" data-close-inner="">
+                  <div class="header-accordion__element" data-accordion="element">
+                    <button class="header__accordion-link header-accordion__button" type="button" data-accordion="button">Новости</button>
+                    <div class="header-accordion__content" data-accordion="content">
+                      <ul class="header-accordion__list list">
+                        <li class="header-accordion__sub-item">
+                          <a class="header-accordion__sub-link" href="#">Новость 1</a>
+                        </li>
+                        <li class="header-accordion__sub-item">
+                          <a class="header-accordion__sub-link" href="#">Новость 2</a>
+                        </li>
+                        <li class="header-accordion__sub-item">
+                          <a class="header-accordion__sub-link" href="#">Новость 3</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <section class="hero">
+        <h2 class="visually-hidden">Возможности</h2>
+        <div class="swiper hero-swiper" data-swiper="hero">
+          <div class="container hero-swiper__pagination-wrapper">
+            <div class="hero-swiper__pagination swiper-pagination" data-pagination="hero"></div>
+          </div>
+          <div class="swiper-wrapper hero-swiper__wrapper">
+            <div class="swiper-slide hero-slide">
+              <div class="hero-slide__img-wrapper">
+                <picture>
+                  <source media="(max-width: 767px)" type="image/webp" srcset="img/content/hero/hero-img-mobile-3@1x.webp 1x, img/content/hero/hero-img-mobile-3@2x.webp 2x">
+                  <source media="(max-width: 1399px)" type="image/webp" srcset="img/content/hero/hero-img-tablet-3@1x.webp 1x, img/content/hero/hero-img-tablet-3@2x.webp 2x">
+                  <source type="image/webp" srcset="img/content/hero/hero-img-desktop-3@1x.webp 1x, img/content/hero/hero-img-desktop-3@2x.webp 2x">
+
+                  <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/hero/hero-img-mobile-3@1x.jpg 1x, img/content/hero/hero-img-mobile-3@2x.jpg 2x">
+                  <source media="(max-width: 1399px)" type="image/jpg" srcset="img/content/hero/hero-img-tablet-3@1x.jpg 1x, img/content/hero/hero-img-tablet-3@2x.jpg 2x">
+                  <img src="img/content/hero/hero-img-desktop-3@1x.jpg" srcset="img/content/hero/hero-img-desktop-3@2x.jpg 2x" width="1440" height="800" alt="Девушка на фоне здания.">
+                </picture>
+              </div>
+              <div class="container hero-slide__container">
+                <div class="hero-slide__text-content">
+                  <h3>
+                    Глобальный профессиональный опыт обучения за рубежом
+                  </h3>
+                </div>
+                <div class="hero-slide__row-wrapper">
+                  <div class="hero-slide__text-content">
+                    <p>
+                      Погрузитесь в академическую программу, проходя практику в разных городах, ощущая настоящий студенческий стиль жизни!
+                    </p>
+                  </div>
+                  <div class="hero-slide__btn-wrapper">
+                    <a class="hero-slide__btn btn" href="#"><span>Подробнее</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide hero-slide">
+              <div class="hero-slide__img-wrapper">
+                <picture>
+                  <source media="(max-width: 767px)" type="image/webp" srcset="img/content/hero/hero-img-mobile-2@1x.webp 1x, img/content/hero/hero-img-mobile-2@2x.webp 2x">
+                  <source media="(max-width: 1399px)" type="image/webp" srcset="img/content/hero/hero-img-tablet-2@1x.webp 1x, img/content/hero/hero-img-tablet-2@2x.webp 2x">
+                  <source type="image/webp" srcset="img/content/hero/hero-img-desktop-2@1x.webp 1x, img/content/hero/hero-img-desktop-2@2x.webp 2x">
+
+                  <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/hero/hero-img-mobile-2@1x.jpg 1x, img/content/hero/hero-img-mobile-2@2x.jpg 2x">
+                  <source media="(max-width: 1399px)" type="image/jpg" srcset="img/content/hero/hero-img-tablet-2@1x.jpg 1x, img/content/hero/hero-img-tablet-2@2x.jpg 2x">
+                  <img src="img/content/hero/hero-img-desktop-2@1x.jpg" srcset="img/content/hero/hero-img-desktop-2@2x.jpg 2x" width="1440" height="800" alt="Группа людей.">
+                </picture>
+              </div>
+              <div class="container hero-slide__container">
+                <div class="hero-slide__text-content">
+                  <h3>
+                    Волонтёрские программы – внесите свой вклад в общество
+                  </h3>
+                </div>
+                <div class="hero-slide__row-wrapper">
+                  <div class="hero-slide__text-content">
+                    <p>
+                      Возможности для преподавания, органического сельского хозяйства, устойчивого образа жизни и другое.
+                    </p>
+                  </div>
+                  <div class="hero-slide__btn-wrapper">
+                    <a class="hero-slide__btn btn" href="#"><span>Подробнее</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide hero-slide">
+              <div class="hero-slide__img-wrapper">
+                <picture>
+                  <source media="(max-width: 767px)" type="image/webp" srcset="img/content/hero/hero-img-mobile-1@1x.webp 1x, img/content/hero/hero-img-mobile-1@2x.webp 2x">
+                  <source media="(max-width: 1399px)" type="image/webp" srcset="img/content/hero/hero-img-tablet-1@1x.webp 1x, img/content/hero/hero-img-tablet-1@2x.webp 2x">
+                  <source type="image/webp" srcset="img/content/hero/hero-img-desktop-1@1x.webp 1x, img/content/hero/hero-img-desktop-1@2x.webp 2x">
+
+                  <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/hero/hero-img-mobile-1@1x.jpg 1x, img/content/hero/hero-img-mobile-1@2x.jpg 2x">
+                  <source media="(max-width: 1399px)" type="image/jpg" srcset="img/content/hero/hero-img-tablet-1@1x.jpg 1x, img/content/hero/hero-img-tablet-1@2x.jpg 2x">
+                  <img src="img/content/hero/hero-img-desktop-1@1x.jpg" srcset="img/content/hero/hero-img-desktop-1@2x.jpg 2x" width="1440" height="800" alt="Работники в офисе.">
+                </picture>
+              </div>
+              <div class="container hero-slide__container">
+                <div class="hero-slide__text-content">
+                  <h3>
+                    Программы стажировок в крупнейших компаниях мира
+                  </h3>
+                </div>
+                <div class="hero-slide__row-wrapper">
+                  <div class="hero-slide__text-content">
+                    <p>
+                      Получите незаменимый опыт работы в ведущих мировых компаниях и государственных организациях.
+                    </p>
+                  </div>
+                  <div class="hero-slide__btn-wrapper">
+                    <a class="hero-slide__btn btn" href="#"><span>Подробнее</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <main class="main">
+      <section class="about" data-test="about">
+        <div class="container about__container">
+          <div class="about__wrapper">
+            <div class="about__col-wrapper">
+              <h2 class="about__title">
+                О проекте «Стажировка»
+              </h2>
+              <div class="about__text-content">
+                <p>
+                  «Стажировка» — совместный проект правительств и волонтёрских бригад.
+                </p>
+              </div>
+            </div>
+            <div class="about__col-wrapper">
+              <div class="about__text-content">
+                <h3>
+                  Наша цель
+                </h3>
+                <p>
+                  Наша деятельность направлена на повышение квалификации молодых специалистов на ранних и средних стадиях карьеры, предоставляя им инструменты для решения сложных проблем, с которыми сталкиваются в мире. Цель центра — наделить этих людей способностью инициировать значимые изменения.
+                </p>
+              </div>
+              <button class="about__button btn" type="button" data-open-modal="modal-1"><span>подробнее о проекте</span></button>
+            </div>
+          </div>
+          <section class="features">
+            <h3 class="visually-hidden">Особенности</h3>
+            <div class="features__container">
+              <ul class="features__list list">
+                <li class="features__item">
+                  <div class="features__text-content">
+                    <h4>
+                      Более 250 программ
+                    </h4>
+                    <p>
+                      учебных и рабочих, разной длительностью от 3 месяцев до 1 года
+                    </p>
+                  </div>
+                </li>
+                <li class="features__item">
+                  <div class="features__text-content">
+                    <h4>
+                      Более 3000 участников
+                    </h4>
+                    <p>
+                      уже успешно прошли программу от «Стажировка» и остались в разных странах
+                    </p>
+                  </div>
+                </li>
+                <li class="features__item">
+                  <div class="features__text-content">
+                    <h4>
+                      от 4 200 $ до 8 400 $
+                    </h4>
+                    <p>
+                      грант всем участникам для комфортного прохождения программы
+                    </p>
+                  </div>
+                </li>
+                <li class="features__item">
+                  <div class="features__text-content">
+                    <h4>
+                      участники из 60 стран
+                    </h4>
+                    <p>
+                      студенты со всего мира приезжают на программу «Стажировка»
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </section>
+      <div data-test="programs">programs</div>
+      <div data-test="grant">grant</div>
+      <div data-test="news">news</div>
+      <div data-test="FAQ">FAQ</div>
+      <div data-test="reviews">reviews</div>
+      <div data-test="contacts">contacts</div>
+      <div data-test="form">form</div>
+    </main>
+    <div data-test="footer">
+      footer
+    </div>
+    <!-- Модальное окно -->
+    <div class="modal" data-modal="modal-1">
+      <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal=""></div>
+        <div class="modal__content">
+          <section class="contact-form">
+            <h2 class="contact-form__title">
+              Напишите нам
+            </h2>
+            <p class="contact-form__description">
+              Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!
+            </p>
+            <div class="contact-form__container" data-form-validate="" data-callback="base">
+              <form action="https://echo.htmlacademy.ru/" method="POST">
+                <div class="contact-form__wrapper">
+                  <div class="contact-form__input" data-validate-type="text"
+                    data-required="">
+                    <label>
+                      <input type="text" id="user-name" name="user-name" placeholder="" autocomplete="off">
+                      <span>Имя</span>
+                    </label>
+                  </div>
+                  <div class="contact-form__input" data-validate-type="phone" data-phone-length="18"
+                    data-required="">
+                    <label>
+                      <input type="tel" id="user-phone" name="user-phone" placeholder="" autocomplete="off">
+                      <span>Телефон</span>
+                    </label>
+                  </div>
+                  <div class="custom-select contact-form__select" data-select="" data-validate-type="select" data-name="user-city" data-id="user-city">
+                    <button class="custom-select__button" type="button" aria-label="Выберите один из городов" data-custom-select="button"><span class="custom-select__text" data-custom-select="text"></span></button>
+                    <ul class="custom-select__list" role="listbox" data-custom-select="list">
+                      <li class="custom-select__item" tabindex="0" data-select-value="saint-petersburg" aria-selected="false" role="option">Санкт-Петербург</li>
+                      <li class="custom-select__item" tabindex="0" data-select-value="voronezh" aria-selected="false" role="option">Воронеж</li>
+                      <li class="custom-select__item" tabindex="0" data-select-value="moscow" aria-selected="false" role="option">Москва</li>
+                    </ul>
+                    <p>Выберите город</p>
+                  </div>
+                  <div class="contact-form__checkbox" data-validate-type="checkbox">
+                    <label>
+                      <input type="checkbox" value="true" name="user-agreement" aria-invalid="true">
+                      <span>Я согласен на обработку моих персональных данных</span>
+                    </label>
+                  </div>
+                </div>
+                <button class="contact-form__submit btn" type="submit" data-form-submit=""><span>Отправить</span></button>
+              </form>
+            </div>
+          </section>
+          <button class="modal__close-btn" type="button" aria-label="Закрыть попап" data-close-modal="" data-focus="">
+            <img src="img/svg/cross.svg" alt="">
           </button>
         </div>
-        <nav class="header__nav" data-content="burger">
-          <ul class="header__list list">
-            <li class="header__item">
-              <a class="header__link" href="#">О проекте</a>
-            </li>
-            <li class="header__item">
-              <div class="header-accordion" data-accordion="parent" data-close-inner="">
-                <div class="header-accordion__element" data-accordion="element">
-                  <button class="header-accordion__button header__accordion-link" type="button" data-accordion="button"><span>Программы</span></button>
-                  <div class="header-accordion__content" data-accordion="content">
-                    <ul class="header-accordion__list list">
-                      <li class="header-accordion__sub-item">
-                        <a class="header-accordion__sub-link" href="#">Стажировки</a>
-                      </li>
-                      <li class="header-accordion__sub-item">
-                        <a class="header-accordion__sub-link" href="#">Волонтёрство</a>
-                      </li>
-                      <li class="header-accordion__sub-item">
-                        <a class="header-accordion__sub-link" href="#">Учёба</a>
-                      </li>
-                      <li class="header-accordion__sub-item">
-                        <a class="header-accordion__sub-link" href="#">Религия</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="header__item">
-              <a class="header__link" href="#">как поехать</a>
-            </li>
-            <li class="header__item">
-              <a class="header__link" href="#">отзывы</a>
-            </li>
-            <li class="header__item">
-              <div class="header-accordion" data-accordion="parent" data-close-inner="">
-                <div class="header-accordion__element" data-accordion="element">
-                  <button class="header__accordion-link header-accordion__button" type="button" data-accordion="button">Новости</button>
-                  <div class="header-accordion__content" data-accordion="content">
-                    <ul class="header-accordion__list list">
-                      <li class="header-accordion__sub-item">
-                        <a class="header-accordion__sub-link" href="#">Новость 1</a>
-                      </li>
-                      <li class="header-accordion__sub-item">
-                        <a class="header-accordion__sub-link" href="#">Новость 2</a>
-                      </li>
-                      <li class="header-accordion__sub-item">
-                        <a class="header-accordion__sub-link" href="#">Новость 3</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="header__item">
-              <a class="header__link" href="#">контакты</a>
-            </li>
-          </ul>
-        </nav>
       </div>
-    </header>
-    <section class="hero">
-      <h2 class="visually-hidden">Возможности</h2>
-      <div class="swiper hero-swiper" data-swiper="hero">
-        <div class="container hero-swiper__pagination-wrapper">
-          <div class="hero-swiper__pagination swiper-pagination" data-pagination="hero"></div>
-        </div>
-        <div class="swiper-wrapper hero-swiper__wrapper">
-          <div class="swiper-slide hero-slide">
-            <div class="hero-slide__img-wrapper">
-              <picture>
-                <source media="(max-width: 767px)" type="image/webp" srcset="img/content/hero/hero-img-mobile-3@1x.webp 1x, img/content/hero/hero-img-mobile-3@2x.webp 2x">
-                <source media="(max-width: 1399px)" type="image/webp" srcset="img/content/hero/hero-img-tablet-3@1x.webp 1x, img/content/hero/hero-img-tablet-3@2x.webp 2x">
-                <source type="image/webp" srcset="img/content/hero/hero-img-desktop-3@1x.webp 1x, img/content/hero/hero-img-desktop-3@2x.webp 2x">
-
-                <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/hero/hero-img-mobile-3@1x.jpg 1x, img/content/hero/hero-img-mobile-3@2x.jpg 2x">
-                <source media="(max-width: 1399px)" type="image/jpg" srcset="img/content/hero/hero-img-tablet-3@1x.jpg 1x, img/content/hero/hero-img-tablet-3@2x.jpg 2x">
-                <img src="img/content/hero/hero-img-desktop-3@1x.jpg" srcset="img/content/hero/hero-img-desktop-3@2x.jpg 2x" width="1440" height="800" alt="Девушка на фоне здания.">
-              </picture>
-            </div>
-            <div class="container hero-slide__container">
-              <div class="hero-slide__text-content">
-                <h3>
-                  Глобальный профессиональный опыт обучения за рубежом
-                </h3>
-              </div>
-              <div class="hero-slide__row-wrapper">
-                <div class="hero-slide__text-content">
-                  <p>
-                    Погрузитесь в академическую программу, проходя практику в разных городах, ощущая настоящий студенческий стиль жизни!
-                  </p>
-                </div>
-                <div class="hero-slide__btn-wrapper">
-                  <a class="hero-slide__btn btn" href="#"><span>Подробнее</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide hero-slide">
-            <div class="hero-slide__img-wrapper">
-              <picture>
-                <source media="(max-width: 767px)" type="image/webp" srcset="img/content/hero/hero-img-mobile-2@1x.webp 1x, img/content/hero/hero-img-mobile-2@2x.webp 2x">
-                <source media="(max-width: 1399px)" type="image/webp" srcset="img/content/hero/hero-img-tablet-2@1x.webp 1x, img/content/hero/hero-img-tablet-2@2x.webp 2x">
-                <source type="image/webp" srcset="img/content/hero/hero-img-desktop-2@1x.webp 1x, img/content/hero/hero-img-desktop-2@2x.webp 2x">
-
-                <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/hero/hero-img-mobile-2@1x.jpg 1x, img/content/hero/hero-img-mobile-2@2x.jpg 2x">
-                <source media="(max-width: 1399px)" type="image/jpg" srcset="img/content/hero/hero-img-tablet-2@1x.jpg 1x, img/content/hero/hero-img-tablet-2@2x.jpg 2x">
-                <img src="img/content/hero/hero-img-desktop-2@1x.jpg" srcset="img/content/hero/hero-img-desktop-2@2x.jpg 2x" width="1440" height="800" alt="Группа людей.">
-              </picture>
-            </div>
-            <div class="container hero-slide__container">
-              <div class="hero-slide__text-content">
-                <h3>
-                  Волонтёрские программы – внесите свой вклад в общество
-                </h3>
-              </div>
-              <div class="hero-slide__row-wrapper">
-                <div class="hero-slide__text-content">
-                  <p>
-                    Возможности для преподавания, органического сельского хозяйства, устойчивого образа жизни и другое.
-                  </p>
-                </div>
-                <div class="hero-slide__btn-wrapper">
-                  <a class="hero-slide__btn btn" href="#"><span>Подробнее</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide hero-slide">
-            <div class="hero-slide__img-wrapper">
-              <picture>
-                <source media="(max-width: 767px)" type="image/webp" srcset="img/content/hero/hero-img-mobile-1@1x.webp 1x, img/content/hero/hero-img-mobile-1@2x.webp 2x">
-                <source media="(max-width: 1399px)" type="image/webp" srcset="img/content/hero/hero-img-tablet-1@1x.webp 1x, img/content/hero/hero-img-tablet-1@2x.webp 2x">
-                <source type="image/webp" srcset="img/content/hero/hero-img-desktop-1@1x.webp 1x, img/content/hero/hero-img-desktop-1@2x.webp 2x">
-
-                <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/hero/hero-img-mobile-1@1x.jpg 1x, img/content/hero/hero-img-mobile-1@2x.jpg 2x">
-                <source media="(max-width: 1399px)" type="image/jpg" srcset="img/content/hero/hero-img-tablet-1@1x.jpg 1x, img/content/hero/hero-img-tablet-1@2x.jpg 2x">
-                <img src="img/content/hero/hero-img-desktop-1@1x.jpg" srcset="img/content/hero/hero-img-desktop-1@2x.jpg 2x" width="1440" height="800" alt="Работники в офисе.">
-              </picture>
-            </div>
-            <div class="container hero-slide__container">
-              <div class="hero-slide__text-content">
-                <h3>
-                  Программы стажировок в крупнейших компаниях мира
-                </h3>
-              </div>
-              <div class="hero-slide__row-wrapper">
-                <div class="hero-slide__text-content">
-                  <p>
-                    Получите незаменимый опыт работы в ведущих мировых компаниях и государственных организациях.
-                  </p>
-                </div>
-                <div class="hero-slide__btn-wrapper">
-                  <a class="hero-slide__btn btn" href="#"><span>Подробнее</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-  <main class="main">
-    <div data-test="about">about</div>
-    <div data-test="programs">programs</div>
-    <div data-test="grant">grant</div>
-    <div data-test="news">news</div>
-    <div data-test="FAQ">FAQ</div>
-    <div data-test="reviews">reviews</div>
-    <div data-test="contacts">contacts</div>
-    <div data-test="form">form</div>
-  </main>
-  <div data-test="footer">
-    footer
-  </div>
-  <script type="module" src="js/vendor.js"></script>
-  <script type="module" src="js/main.js"></script>
-</body>
-
+    </div>
+    <script type="module" src="js/vendor.js"></script>
+    <script type="module" src="js/main.js"></script>
+  </body>
 </html>

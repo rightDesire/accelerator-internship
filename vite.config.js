@@ -6,7 +6,7 @@ import { ViteMinifyPlugin } from 'vite-plugin-minify';
 export default {
   plugins: [
     VitePluginSvgSpritemap('source/img/sprite/*.svg', {
-      styles: false,
+      styles: 'sass/spritemap.scss',
       injectSVGOnDev: true,
     }),
     // input https://www.npmjs.com/package/html-minifier-terser options

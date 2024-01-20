@@ -1,0 +1,22 @@
+.modal__close-btn {
+  background-color: transparent;
+}
+
+.modal__content {
+  width: 510px;
+  height: 611px;
+  min-width: 290px;
+  padding: 60px 80px;
+  border-radius: 16px;
+  overflow-y: auto;
+
+  @include vp-tablet {
+    width: 510px;
+    height: 602px;
+  }
+
+  @include vp-mobile {
+    height: 521px;
+    padding: 40px 15px;
+  }
+}
