@@ -2,6 +2,7 @@ export const burger = (ScrollLock, FocusLock) => {
   let prevScrollPos = window.scrollY;
   const header = document.querySelector('[data-header=""]');
   const burgerButton = document.querySelector('[data-burger=""]');
+  const accordionElements = header.querySelectorAll('[data-accordion="element"]');
   const body = document.body;
 
   const closeMenu = () => {
@@ -14,6 +15,11 @@ export const burger = (ScrollLock, FocusLock) => {
     });
     header.classList.remove('is-open');
     body.classList.remove('overlay');
+    accordionElements.forEach((accordionEl) => {
+      const accordionContent = accordionEl.querySelector('[data-accordion="content"]');
+      accordionEl.classList.remove('is-active');
+      accordionContent.style.maxHeight = '0px';
+    });
   };
 
   const openMenu = () => {
@@ -31,9 +37,14 @@ export const burger = (ScrollLock, FocusLock) => {
   window.addEventListener('scroll', () => {
     const currentScrollPos = window.scrollY;
 
-    if (prevScrollPos > currentScrollPos) {
+    if (currentScrollPos === 0) {
+      // Если страница прокручена вверх, показать header
+      header.classList.remove('is-hidden');
+    } else if (prevScrollPos > currentScrollPos) {
+      // Если страница прокручивается вверх, также показать header
       header.classList.remove('is-hidden');
     } else {
+      // Если страница прокручивается вниз, скрыть header
       header.classList.add('is-hidden');
     }
 

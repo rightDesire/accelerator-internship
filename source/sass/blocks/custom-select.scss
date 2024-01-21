@@ -65,9 +65,7 @@
 }
 
 .custom-select__item {
-  max-width: 120px;
   padding: 17px 20px;
-  word-wrap: break-word;
 
   &[aria-selected="true"] {
     color: $color-default-white;
@@ -102,4 +100,9 @@
     color: $color-default-white;
     background-color: $color-additional-text;
   }
+}
+
+.custom-select__item span {
+  max-width: 120px;
+  word-wrap: break-word;
 }
