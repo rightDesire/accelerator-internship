@@ -48,3 +48,11 @@
   margin-left: 0;
   margin-right: 0;
 }
+
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+  position: static;
+}
+
+.swiper-scrollbar-drag {
+  background-color: #316dc2;
+}
