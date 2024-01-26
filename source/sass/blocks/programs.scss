@@ -131,29 +131,3 @@
     right: 15px; // Container
   }
 }
-
-.programs__btn {
-  position: static;
-  display: block;
-  width: 22px;
-  height: 22px;
-  background-image: url("../../img/svg/arrow-swiper.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: 10px;
-  z-index: 1000;
-  cursor: pointer;
-
-  &--next {
-    transform: translateY(100%) scaleX(1);
-  }
-
-  &--prev {
-    transform: translateY(100%) scaleX(-1);
-    // background-position: 50% 49%; // Подгон
-  }
-
-  &::after {
-    content: unset;
-  }
-}

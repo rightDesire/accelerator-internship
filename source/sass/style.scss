@@ -24,6 +24,7 @@
 @import "blocks/list";
 @import "blocks/btn";
 @import "blocks/swiper"; /*Переписывает стили*/
+@import "blocks/swiper-btn";
 @import "blocks/header";
 @import "blocks/header-accordion";
 @import "blocks/hero-swiper";
@@ -37,3 +38,6 @@
 @import "blocks/programs-swiper";
 @import "blocks/programs-slide";
 @import "blocks/grant";
+@import "blocks/news";
+@import "blocks/news-swiper";
+@import "blocks/news-slide";
