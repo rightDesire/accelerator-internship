@@ -84,7 +84,7 @@ const breakpointsNews = {
       fill: 'column',
       rows: 2,
     },
-    spaceBetween: 30,
+    spaceBetween: 20,
   },
 };
 

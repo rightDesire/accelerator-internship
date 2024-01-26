@@ -17,6 +17,12 @@
   }
 }
 
+.news-slide:nth-child(2n - 1) .news-slide__container {
+  @include vp-mobile {
+    min-height: 330px;
+  }
+}
+
 .news-slide__container {
   position: relative;
   display: flex;
@@ -36,7 +42,10 @@
 
   @include vp-mobile {
     min-height: 240px;
+    height: auto;
     padding: 10px;
+    padding-bottom: 0;
+    padding-left: 0;
   }
 }
 
@@ -55,10 +64,6 @@
   height: 100%;
   min-height: 100%;
   object-fit: cover;
-
-  @include vp-tablet {
-    // height: calc(50% - 15px); // По-другому не получилось
-  }
 }
 
 .news-slide__time {
@@ -88,6 +93,7 @@
     mask-image: url("../../img/svg/angle.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    pointer-events: none;
   }
 
   &::before {
@@ -138,10 +144,9 @@
   @include vp-tablet {
     width: 173px;
     max-height: 110px;
-
-    word-wrap: break-word;
     overflow-y: auto;
     overflow-x: hidden;
+    word-wrap: break-word;
 
     font-size: 20px;
     line-height: 24px;
@@ -153,7 +158,10 @@
     font-size: 16px;
     line-height: 18px;
   }
+}
 
+.news-slide__text-content--title {
+  position: relative;
   &::after {
     content: "";
     position: absolute;
@@ -167,6 +175,7 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
     transform: translateX(100%);
+    pointer-events: none;
   }
 }
 
@@ -206,6 +215,7 @@
 
   @include vp-mobile {
     width: 270px;
+    padding: 12px 10px 10px 0px;
   }
 
   &::after {
@@ -221,6 +231,7 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
     transform: translateX(100%);
+    pointer-events: none;
   }
 }
 
@@ -233,9 +244,9 @@
 }
 
 .news-slide__text-content p {
-  max-width: 239px;
+  max-width: 176px;
   margin: 0;
-
+  word-wrap: break-word;
 
   font-size: 14px;
   line-height: 18px;
@@ -243,6 +254,7 @@
   @include vp-tablet {
     max-width: 181px;
     max-height: 80px;
+    min-height: 30px;
 
     word-wrap: break-word;
     overflow-y: auto;
@@ -253,7 +265,7 @@
   }
 
   @include vp-mobile {
-    max-width: 188px;
+    max-width: 214px;
     font-size: 12px;
     line-height: 14px;
   }
@@ -264,8 +276,8 @@
 
   @include vp-tablet {
     max-width: 181px;
-
     max-height: 80px;
+    min-height: 44px;
     margin: 0;
 
     word-wrap: break-word;
@@ -274,7 +286,7 @@
   }
 
   @include vp-mobile {
-    max-width: 188px;
+    max-width: 214px;
   }
 }
 
