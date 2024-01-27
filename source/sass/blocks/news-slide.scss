@@ -72,7 +72,7 @@
   min-width: 78px;
   color: $color-additional-text;
   background-color: $color-dark-theme-text;
-  padding: 10px 12px 4px 0px;
+  padding: 9px 12px 4px 0px;
   border-radius: 0px 12px 0px 0px;
 
   font-size: 12px;
@@ -113,11 +113,10 @@
   display: block;
   max-width: 80px;
   min-width: 78px;
-  max-height: 14px;
-  word-wrap: normal;
-  white-space: nowrap;
-  overflow-y: hidden;
-  overflow-x: auto;
+  height: 14px;
+  word-wrap: break-word;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .news-slide__text-content {
@@ -215,7 +214,7 @@
 
   @include vp-mobile {
     width: 270px;
-    padding: 12px 10px 10px 0px;
+    padding: 5px 10px 3px 0px;
   }
 
   &::after {
@@ -240,10 +239,13 @@
 
   @include vp-tablet {
     width: 263px;
+    padding: 11px 10px 9px 0px;
   }
 }
 
 .news-slide__text-content p {
+  display: flex;
+  align-items: center;
   max-width: 176px;
   margin: 0;
   word-wrap: break-word;
@@ -254,9 +256,10 @@
   @include vp-tablet {
     max-width: 181px;
     max-height: 80px;
-    min-height: 30px;
-
+    min-height: 44px;
     word-wrap: break-word;
+    hyphens: auto; // По-другому не получилось
+
     overflow-y: auto;
     overflow-x: hidden;
 
@@ -266,6 +269,7 @@
 
   @include vp-mobile {
     max-width: 214px;
+
     font-size: 12px;
     line-height: 14px;
   }

@@ -6,6 +6,11 @@ $sprites: (
 		uri: "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='10' height='8' fill='none' viewBox='0 0 10 8'%3e%3cpath stroke='white' stroke-linecap='round' stroke-linejoin='round' d='M1 3.5 3.947 7 9 1'/%3e%3c/svg%3e",
 		width: 10px,
 		height: 8px
+	),
+	'cross': (
+		uri: "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' d='m1 19 9-9m0 0 9-9m-9 9 9 9m-9-9L1 1'/%3e%3c/svg%3e",
+		width: 20px,
+		height: 20px
 	)
 );
 

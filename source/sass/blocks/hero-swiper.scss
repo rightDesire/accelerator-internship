@@ -2,10 +2,6 @@
   position: relative;
 }
 
-.hero-swiper__wrapper {
-
-}
-
 .hero-swiper__pagination-wrapper {
   position: relative;
   top: 409px;
@@ -38,7 +34,8 @@
     display: block;
     width: 20px;
     height: 20px;
-    background-image: url("../../img/svg/angle.svg");
+    background-color: $color-default-white;
+    mask-image: url("../../img/svg/angle.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     transform: translateX(100%);
@@ -46,7 +43,8 @@
     @include vp-mobile {
       width: 10px;
       height: 10px;
-      background-image: url("../../img/svg/angle-mobile.svg");
+      background-color: $color-default-white;
+      mask-image: url("../../img/svg/angle-mobile.svg");
     }
   }
 }

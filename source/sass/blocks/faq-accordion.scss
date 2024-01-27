@@ -1,0 +1,116 @@
+.faq-accordion__element {
+  width: 100%;
+  padding: 40px;
+  color: $color-additional-text;
+  border: 1px solid $color-additional-text;
+  border-radius: 16px;
+  background-color: $color-dark-theme-text;
+  text-align: start;
+
+  @include vp-tablet {
+    padding: 30px;
+  }
+
+  @include vp-mobile {
+    padding: 20px 15px;
+  }
+}
+
+.faq-accordion__element:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.faq-accordion__element.is-active {
+  color: $color-default-white;
+  background-color: $color-additional-text;
+  border-color: transparent;
+}
+
+.faq-accordion__element .faq-accordion__button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  color: $color-additional-text;
+  border-color: transparent;
+  background-color: transparent;
+  text-align: start;
+  cursor: pointer;
+
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+
+  @include vp-tablet {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  @include vp-mobile {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    background-color: $color-additional-text;
+    border-radius: 30px;
+    background-image: url("../../img/svg/plus.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 20px;
+    transition: background-color 0.3s ease;
+  }
+}
+
+.faq-accordion__element.is-active .faq-accordion__button {
+  color: $color-default-white;
+
+  &::after {
+    background-color: $color-default-white;
+    background-image: url("../../img/svg/minus.svg");
+  }
+}
+
+.faq-accordion__button span {
+  max-width: 800px;
+  word-wrap: break-word;
+
+  @include vp-tablet {
+    max-width: 500px;
+  }
+
+  @include vp-mobile {
+    max-width: 190px;
+  }
+}
+
+.faq-accordion__wrapper p {
+  max-width: 690px;
+  margin: 0;
+  margin-top: 20px;
+  word-wrap: break-word;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+
+  @include vp-tablet {
+    max-width: 620px;
+  }
+
+  @include vp-mobile {
+    max-width: 260px;
+
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
