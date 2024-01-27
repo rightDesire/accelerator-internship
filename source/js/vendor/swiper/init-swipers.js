@@ -1,6 +1,7 @@
 import {initHeroSlider} from '../../modules/hero-slider';
 import {initProgramsSlider} from '../../modules/programs-slider';
 import {initNewsSlider} from '../../modules/news-slider';
+import { initReviewsSlider } from '../../modules/reviews-slider';
 
 const vpDesktop = 1440;
 const vpTablet = 768;
@@ -11,6 +12,7 @@ const loop = {
   hero: true,
   programs: false,
   news: false,
+  reviews: false
 };
 
 const initSlide = {
@@ -20,6 +22,9 @@ const initSlide = {
   newsDesktop: 'auto',
   newsTablet: 2,
   newsMobile: 1,
+  reviewsDesktop: 2,
+  reviewsTablet: 1.24,
+  reviewsMobile: 1,
 };
 
 const breakpointsHero = {
@@ -88,8 +93,33 @@ const breakpointsNews = {
   },
 };
 
+const breakpointsReviews = {
+  [vpDesktop]: {
+    allowTouchMove: false,
+    slidesPerView: initSlide.reviewsDesktop,
+    spaceBetween: 32,
+    scrollbar: {
+      dragSize: 392,
+    },
+  },
+  [vpTablet]: {
+    allowTouchMove: true,
+    slidesPerView: initSlide.reviewsTablet,
+    spaceBetween: 30,
+    scrollbar: {
+      dragSize: 324,
+    },
+  },
+  [vpMobile]: {
+    allowTouchMove: true,
+    slidesPerView: initSlide.reviewsMobile,
+    spaceBetween: 0,
+  },
+};
+
 export const initSliders = () => {
   initHeroSlider(loop.hero, breakpointsHero);
   initProgramsSlider(loop.programs, breakpointsPrograms);
   initNewsSlider(loop.news, breakpointsNews);
+  initReviewsSlider(loop.reviews, breakpointsReviews);
 };
