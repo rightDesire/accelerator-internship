@@ -33,9 +33,10 @@
     display: block;
     width: 16px;
     height: 16px;
-    background-image: url("../../img/svg/arrow-select.svg");
+    background-color: $color-main-text;
+    mask-image: url("/__spritemap#sprite-arrow-select-view");
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position-y: 100px;
     transform: translateY(-50%);
     pointer-events: none;
     transition: transform 0.4s ease-in-out;

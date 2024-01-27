@@ -5,6 +5,26 @@
   font-style: normal;
   font-weight: 400;
   line-height: 26px;
+
+  &--alt {
+    position: relative;
+    width: 498px;
+    min-height: 803px;
+    padding: 70px 74px;
+    color: $color-default-white;
+    background-color: $color-additional-text;
+    border-radius: 16px;
+    z-index: 1;
+
+    @include vp-tablet {
+      min-height: 780px;
+    }
+
+    @include vp-mobile {
+      min-width: 290px;
+      min-height: 753px;
+    }
+  }
 }
 
 .contact-form__container {
@@ -18,6 +38,12 @@
 .contact-form__container form {
   display: flex;
   flex-direction: column;
+}
+
+.contact-form--alt .contact-form__title,
+.contact-form--alt .contact-form__description {
+  color: $color-default-white;
+  text-align: start;
 }
 
 .contact-form__title {
@@ -88,6 +114,7 @@
   border-radius: 8px;
   border: 1px solid rgba(72, 72, 72, 0.3);
   transition: border 0.3s ease;
+  background-color: transparent;
 
   @include hover-focus {
     border-color: $color-main-text;
@@ -101,6 +128,15 @@
 
   @include vp-mobile {
     height: 44px;
+  }
+}
+
+.contact-form__input--alt > label input {
+  color: $color-default-white;
+  border-color: rgba(255, 255, 255, 0.3);
+
+  @include hover-focus {
+    border-color: $color-default-white;
   }
 }
 
@@ -122,6 +158,14 @@
   display: flex;
   flex-direction: column-reverse;
   row-gap: 12px;
+}
+
+.contact-form__select--alt > button {
+  border-color: rgba(255, 255, 255, 0.3);
+
+  &::after {
+    background-color: $color-default-white;
+  }
 }
 
 .contact-form__select p {
@@ -183,10 +227,20 @@
     display: block;
     width: 10px;
     height: 10px;
-    background-image: url("/__spritemap#sprite-arrow-checkbox-view");
+    background-color: $color-default-white;
+    mask-image: url("/__spritemap#sprite-arrow-checkbox-view");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     transform: translateX(-50%) translateY(-50%);
+  }
+}
+
+.contact-form__checkbox--alt > label input:checked {
+  background-color: $color-default-white;
+
+  &::after {
+    background-color: $color-additional-text;
+    mask-image: url("/__spritemap#sprite-arrow-checkbox-view");
   }
 }
 
@@ -231,6 +285,41 @@
   }
 }
 
+.contact-form--alt .contact-form__submit {
+  width: 350px;
+
+  @include vp-tablet {
+    width: 352px;
+  }
+
+  @include vp-mobile {
+    width: 100%;
+  }
+}
+
 .contact-form__submit span {
   word-wrap: break-word;
+}
+
+.contact-form__input label > textarea {
+  padding: 15px;
+  color: $color-default-white;
+  border-radius: 8px;
+  border-color: rgba(255, 255, 255, 0.3);
+  background-color: transparent;
+  height: 120px;
+
+  @include hover-focus {
+    border-color: $color-main-text;
+    outline: none;
+  }
+
+  &:disabled {
+    border: 1px solid rgba(169, 175, 183, 0.5);
+    background-color: rgba(169, 175, 183, 0.2);
+  }
+
+  @include vp-mobile {
+    height: 94px;
+  }
 }

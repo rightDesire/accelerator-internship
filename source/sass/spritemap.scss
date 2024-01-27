@@ -7,6 +7,11 @@ $sprites: (
 		width: 10px,
 		height: 8px
 	),
+	'arrow-select': (
+		uri: "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cg%3e%3cpath stroke='currentColor' d='M15.273 5.09 8 11.637.728 5.091'/%3e%3c/g%3e%3c/svg%3e",
+		width: 16px,
+		height: 16px
+	),
 	'cross': (
 		uri: "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' d='m1 19 9-9m0 0 9-9m-9 9 9 9m-9-9L1 1'/%3e%3c/svg%3e",
 		width: 20px,
