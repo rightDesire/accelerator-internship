@@ -1046,7 +1046,52 @@
           </div>
         </div>
       </div>
-      <div data-test="contacts">contacts</div>
+      <div class="contacts" data-test="contacts">
+        <div class="container">
+          <div class="contacts__row-wrapper">
+            <h2 class="contacts__title">
+              Контакты
+            </h2>
+            <div class="contacts__col-wrapper">
+              <dl class="contacts__dl">
+                <dt>
+                  центральный офис
+                </dt>
+                <dd>
+                  г. Новосибирск, ул. Щетинкина 68, культурный центр
+                </dd>
+              </dl>
+              <dl class="contacts__dl">
+                <dt>
+                  Телефон
+                </dt>
+                <dd>
+                  +7 963 876 876 76
+                </dd>
+              </dl>
+              <dl class="contacts__dl">
+                <dt>
+                  Email
+                </dt>
+                <dd>
+                  Info@stazh.ru
+                </dd>
+              </dl>
+            </div>
+          </div>
+          <div class="contacts__img-wrapper">
+            <picture>
+              <source media="(max-width: 767px)" type="image/webp" srcset="img/content/map-img-mobile@1x.webp 1x, img/content/map-img-mobile@2x.webp 2x">
+              <source media="(max-width: 1439px)" type="image/webp" srcset="img/content/map-img-tablet@1x.webp 1x, img/content/map-img-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/content/map-img-desktop@1x.webp 1x, img/content/map-img-desktop@2x.webp 2x">
+
+              <source media="(max-width: 767px)" type="image/png" srcset="img/content/map-img-mobile@1x.png 1x, img/content/map-img-mobile@2x.png 2x">
+              <source media="(max-width: 1439px)" type="image/png" srcset="img/content/map-img-tablet@1x.png 1x, img/content/map-img-tablet@2x.png 2x">
+              <img src="img/content/map-img-desktop@1x.png" srcset="img/content/map-img-desktop@2x.png 2x" width="1240" height="500" alt="Адрес на карте: г. Новосибирск, ул. Щетинкина 68, культурный центр.">
+            </picture>
+          </div>
+        </div>
+      </div>
       <div data-test="form">form</div>
     </main>
     <div data-test="footer">
