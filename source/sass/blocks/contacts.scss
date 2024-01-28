@@ -85,7 +85,7 @@
 }
 
 .contacts__dl dd {
-  max-width: 263px;
+  max-width: 140px;
   margin-left: 0;
   word-wrap: break-word;
 
@@ -99,7 +99,15 @@
   }
 
   @include vp-mobile {
-    max-width: 230px;
+    max-width: 130px;
     font-size: 14px;
+  }
+}
+
+.contacts__dl--address dd {
+  max-width: 263px;
+
+  @include vp-mobile {
+    max-width: 230px;
   }
 }

@@ -1,4 +1,5 @@
 .contact-form {
+  min-width: 290px;
   color: $color-main-text;
   font-family: $ff-manrope;
   font-size: 16px;
@@ -18,11 +19,13 @@
 
     @include vp-tablet {
       min-height: 780px;
+      padding: 50px 45px;
     }
 
     @include vp-mobile {
       min-width: 290px;
       min-height: 753px;
+      padding: 50px 15px;
     }
   }
 }
@@ -260,7 +263,7 @@
 .contact-form__submit {
   align-self: center;
   width: 194px;
-  height: 54px;
+  min-height: 54px;
   min-height: 54px;
   font-size: 14px;
   font-weight: 500;
