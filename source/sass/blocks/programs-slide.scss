@@ -144,5 +144,33 @@
     background-image: url("/img/svg/arrow-btn.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    transition: 0.1s transform ease-in-out;
+  }
+
+  @include hover-focus {
+    outline: none;
+
+    &::after {
+      background-color: $color-default-white;
+      background-image: url("/img/svg/arrow-btn-alt.svg");
+    }
+  }
+
+  @include active {
+    &::after {
+      opacity: 0.7;
+    }
+  }
+
+  &:disabled,
+  &.disabled {
+    cursor: none;
+    pointer-events: none;
+
+    &::after {
+      color: $color-disabled;
+      background-color: $color-disabled;
+      background-image: url("/img/svg/arrow-btn.svg");
+    }
   }
 }

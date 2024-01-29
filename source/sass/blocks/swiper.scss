@@ -80,6 +80,14 @@
   background-color: #316dc2;
 }
 
+.swiper-pagination-bullet:active {
+  outline: none;
+  border: 1px solid transparent;
+  opacity: 1;
+  color: $color-default-white;
+  background-color: $color-active;
+}
+
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   margin-left: 0;
   margin-right: 0;

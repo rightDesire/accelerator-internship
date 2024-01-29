@@ -108,8 +108,8 @@
   letter-spacing: 0.28px;
   text-transform: uppercase;
 
-  &--active {
-    border-color: $color-additional-text;
+  @include hover-focus {
+    outline: none;
     opacity: 1;
   }
 
@@ -124,6 +124,11 @@
     font-size: 12px;
     line-height: 12px;
     letter-spacing: 0.24px;
+  }
+
+  &--active {
+    border-color: $color-additional-text;
+    opacity: 1;
   }
 }
 

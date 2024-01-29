@@ -41,6 +41,16 @@
     pointer-events: none;
     transition: transform 0.4s ease-in-out;
   }
+
+  &--alt {
+    &:hover:not(.focus-visible) {
+      border-color: $color-default-white;
+    }
+
+    &:focus {
+      border-color: $color-default-white;
+    }
+  }
 }
 
 .custom-select.is-open .custom-select__button {

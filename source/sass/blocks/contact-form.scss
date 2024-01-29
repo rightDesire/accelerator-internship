@@ -310,10 +310,11 @@
   border-radius: 8px;
   border-color: rgba(255, 255, 255, 0.3);
   background-color: transparent;
+  transition: 0.3s border-color ease;
   height: 120px;
 
   @include hover-focus {
-    border-color: $color-main-text;
+    border-color: $color-default-white;
     outline: none;
   }
 

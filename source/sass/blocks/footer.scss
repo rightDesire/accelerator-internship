@@ -93,6 +93,15 @@
   font-weight: 400;
   line-height: 26px;
 
+  @include hover-focus {
+    outline: none;
+    color: $color-additional-text;
+  }
+
+  @include active {
+    color: $color-active;
+  }
+
   @include vp-tablet {
     line-height: 20px;
   }
@@ -115,6 +124,40 @@
 
   @include vp-mobile {
     justify-content: center;
+  }
+}
+
+.footer__social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  color: $color-default-white;
+  background-color: $color-additional-text;
+  border-radius: 30px;
+
+  @include vp-mobile {
+    width: 26px;
+    height: 26px;
+
+    font-size: 14px;
+  }
+
+  @include hover-focus {
+    outline: none;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  @include active {
+    background-color: $color-active;
+  }
+}
+
+.footer__social-link svg {
+  @include vp-mobile {
+    width: 12px;
+    height: 12px;
   }
 }
 
@@ -172,6 +215,15 @@
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
+
+  @include hover-focus {
+    outline: none;
+    color: $color-additional-text;
+  }
+
+  @include active {
+    color: $color-active;
+  }
 
   @include vp-tablet {
     max-width: 240px;

@@ -11,6 +11,7 @@
   border: 1px solid $color-additional-text;
   border-radius: 30px;
   cursor: pointer;
+  transition: 0.3s background-color ease;
 
   text-transform: uppercase;
 
@@ -25,11 +26,91 @@
     background-image: url("/img/svg/arrow-btn.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    transition: 0.3s background-color ease;
+  }
+
+  @include hover-focus {
+    color: $color-default-white;
+    background-color: $color-additional-text;
+    outline: none;
+
+    &::after {
+      background-color: $color-default-white;
+      background-image: url("/img/svg/arrow-btn-alt.svg");
+    }
+  }
+
+  @include active {
+    color: rgba(255, 255, 255, 0.7);
+    background-color: $color-additional-text;
+
+    &::after {
+      background-color: $color-default-white;
+      background-image: url("/img/svg/arrow-btn-alt.svg");
+    }
+  }
+
+  &:disabled,
+  &.disabled {
+    color: $color-disabled;
+    background-color: transparent;
+    border-color: $color-disabled;
+    cursor: none;
+    pointer-events: none;
+
+    &::after {
+      background-color: $color-disabled;
+      background-image: url("/img/svg/arrow-btn.svg");
+    }
   }
 
   &--alt {
     color: $color-default-white;
+    border-color: $color-default-white;
     background-color: $color-additional-text;
+
+    &::after {
+      background-color: $color-default-white;
+      background-image: url("/img/svg/arrow-btn-alt.svg");
+      transform: rotate(-45deg);
+    }
+
+    @include hover-focus {
+      color: $color-additional-text;
+      background-color: $color-default-white;
+      outline: none;
+
+      &::after {
+        background-color: $color-additional-text;
+        background-image: url("/img/svg/arrow-btn.svg");
+        transform: rotate(45deg);
+      }
+    }
+
+    @include active {
+      color: rgba(49, 109, 194, 0.7);
+      background-color: $color-default-white;
+
+      &::after {
+        background-color: $color-additional-text;
+        background-image: url("/img/svg/arrow-btn.svg");
+        transform: rotate(45deg);
+      }
+    }
+
+    &:disabled,
+    &.disabled {
+      color: $color-disabled;
+      background-color: transparent;
+      border-color: $color-disabled;
+      cursor: none;
+      pointer-events: none;
+
+      &::after {
+        background-color: $color-disabled;
+        background-image: url("/img/svg/arrow-btn.svg");
+      }
+    }
   }
 }
 

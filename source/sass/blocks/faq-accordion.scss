@@ -62,11 +62,30 @@
     min-height: 40px;
     background-color: $color-additional-text;
     border-radius: 30px;
+    border: 1px solid transparent;
     background-image: url("../../img/svg/plus.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 20px;
     transition: background-color 0.3s ease;
+  }
+
+  @include hover-focus {
+    outline: none;
+
+    &::after {
+      background-color: transparent;
+      border-color: $color-additional-text;
+      background-image: url("../../img/svg/plus-alt.svg");
+    }
+  }
+
+  @include active {
+    &::after {
+      background-color: $color-active;
+      border-color: transparent;
+      background-image: url("../../img/svg/plus.svg");
+    }
   }
 }
 
@@ -76,6 +95,24 @@
   &::after {
     background-color: $color-default-white;
     background-image: url("../../img/svg/minus.svg");
+  }
+
+  @include hover-focus {
+    outline: none;
+
+    &::after {
+      background-color: transparent;
+      border-color: $color-default-white;
+      background-image: url("../../img/svg/minus-alt.svg");
+    }
+  }
+
+  @include active {
+    &::after {
+      background-color: $color-default-white;
+      border-color: transparent;
+      background-image: url("../../img/svg/minus.svg");
+    }
   }
 }
 
