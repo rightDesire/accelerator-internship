@@ -149,11 +149,11 @@
   background-color: rgba(255, 94, 102, 0.2);
 }
 
-.contact-form__input > label input + span {
+.contact-form__input input + span {
   word-wrap: break-word;
 }
 
-.contact-form__input > label input:disabled + span {
+.contact-form__input input:disabled + span {
   color: rgba(169, 175, 183, 0.6);
 }
 
@@ -195,6 +195,7 @@
   width: 20px;
   min-width: 20px;
   height: 20px;
+
   // border: 1px solid transparent;
   border-radius: 2px;
   outline: none;
@@ -247,7 +248,7 @@
   }
 }
 
-.contact-form__checkbox > label input + span {
+.contact-form__checkbox input + span {
   max-width: 312px;
   word-wrap: break-word;
 
@@ -263,7 +264,6 @@
 .contact-form__submit {
   align-self: center;
   width: 194px;
-  min-height: 54px;
   min-height: 54px;
   font-size: 14px;
   font-weight: 500;
@@ -304,7 +304,7 @@
   word-wrap: break-word;
 }
 
-.contact-form__input label > textarea {
+.contact-form__input > textarea {
   padding: 15px;
   color: $color-default-white;
   border-radius: 8px;

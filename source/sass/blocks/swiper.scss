@@ -4,7 +4,7 @@
   column-gap: 12px;
   padding: 14px 20px;
 
-  @media (max-width: 767px) {
+  @media (width <= 767px) {
     padding: 10px 16px;
   }
 }
@@ -27,7 +27,7 @@
   color: $color-additional-text;
   background-color: transparent;
 
-  @media (max-width: 767px) {
+  @media (width <= 767px) {
     width: 8px;
     height: 8px;
   }
@@ -74,7 +74,7 @@
 
 .swiper-pagination-bullet-active,
 .swiper-pagination-bullet-active:hover,
-.swiper-pagination-bullet-active:focus  {
+.swiper-pagination-bullet-active:focus {
   color: $color-default-white;
   border: 1px solid transparent;
   background-color: #316dc2;

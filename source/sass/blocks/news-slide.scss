@@ -72,8 +72,8 @@
   min-width: 78px;
   color: $color-additional-text;
   background-color: $color-dark-theme-text;
-  padding: 9px 12px 4px 0px;
-  border-radius: 0px 12px 0px 0px;
+  padding: 9px 12px 4px 0;
+  border-radius: 0 12px 0 0;
 
   font-size: 12px;
   font-style: normal;
@@ -129,7 +129,7 @@
   position: relative;
   width: 214px;
   margin: 0;
-  padding: 10px 10px 4px 0px;
+  padding: 10px 10px 4px 0;
   color: $color-additional-text;
   background-color: $color-dark-theme-text;
   border-radius: 0 12px 0 0;
@@ -161,6 +161,7 @@
 
 .news-slide__text-content--title {
   position: relative;
+
   &::after {
     content: "";
     position: absolute;
@@ -180,12 +181,12 @@
 
 .news-slide--big .news-slide__text-content > h3 {
   width: 291px;
-  padding: 18px 18px 6px 0px;
+  padding: 18px 18px 6px 0;
 
   @include vp-tablet {
     width: 173px;
     max-height: 110px;
-    padding: 10px 10px 4px 0px;
+    padding: 10px 10px 4px 0;
 
     word-wrap: break-word;
     overflow-y: auto;
@@ -204,7 +205,7 @@
   align-items: center;
   column-gap: 16px;
   width: 240px;
-  padding: 12px 18px 15px 0px;
+  padding: 12px 18px 15px 0;
   background-color: $color-dark-theme-text;
   border-radius: 0 12px 0 0;
 
@@ -214,7 +215,7 @@
 
   @include vp-mobile {
     width: 270px;
-    padding: 5px 10px 3px 0px;
+    padding: 5px 10px 3px 0;
   }
 
   &::after {
@@ -239,7 +240,7 @@
 
   @include vp-tablet {
     width: 263px;
-    padding: 11px 10px 9px 0px;
+    padding: 11px 10px 9px 0;
   }
 }
 
@@ -328,11 +329,12 @@
   &.disabled {
     cursor: none;
     pointer-events: none;
+  }
 
-    &::after {
-      color: $color-disabled;
-      background-color: $color-disabled;
-      background-image: url("/img/svg/arrow-btn.svg");
-    }
+  &::after:disabled,
+  &::after.disabled {
+    color: $color-disabled;
+    background-color: $color-disabled;
+    background-image: url("/img/svg/arrow-btn.svg");
   }
 }

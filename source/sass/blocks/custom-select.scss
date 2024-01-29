@@ -54,7 +54,7 @@
 }
 
 .custom-select.is-open .custom-select__button {
-  &:after {
+  &::after {
     transform: translateY(-50%) scaleY(-1);
   }
 }

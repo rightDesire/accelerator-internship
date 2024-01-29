@@ -21,15 +21,15 @@
 
   @include vp-tablet {
     grid-template-areas:
-    "nav nav"
-    "copyright social";
+      "nav nav"
+      "copyright social";
   }
 
   @include vp-mobile {
     grid-template-areas:
-    "nav"
-    "copyright"
-    "social";
+      "nav"
+      "copyright"
+      "social";
     row-gap: 0;
   }
 }
