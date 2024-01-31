@@ -5,6 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Internship programs</title>
     <link rel="stylesheet" href="sass/style.scss">
+    <!-- favicon -->
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <!-- Предзагрузка -->
+    <link rel="preload" href="css/style.min.css" as="style">
+    <link rel="preload" href="js/vendor.min.js" as="script">
+    <link rel="preload" href="js/main.min.js" as="script">
+    <link rel="preload" as="image" href="img/content/hero/hero-img-mobile-1@1x.webp"
+      imagesrcset="img/content/hero/hero-img-mobile-1@1x.webp, img/content/hero/hero-img-mobile-1@2x.webp 2x" media="(min-width: 1px) and (max-width: 767px)" type="image/webp">
+    <link rel="preload" as="image" href="img/content/hero/hero-img-tablet-1@1x.webp"
+      imagesrcset="img/content/hero/hero-img-tablet-1@1x.webp, img/content/hero/hero-img-tablet-1@2x.webp 2x" media="(min-width: 768px) and (max-width: 1439px)" type="image/webp">
+    <link rel="preload" as="image" href="img/content/hero/hero-img-desktop-1@1x.webp"
+      imagesrcset="img/content/hero/hero-img-desktop-1@1x.webp, img/content/hero/hero-img-desktop-1@2x.webp 2x" media="(min-width: 1440px)" type="image/webp">
+    <link rel="preload" href="fonts/Manrope-Regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Manrope-Medium.woff2" as="font" crossorigin="anonymous">
   </head>
   <body>
     <h1 class="visually-hidden">Программа стажировки</h1>
@@ -90,13 +107,13 @@
             <div class="swiper-slide hero-slide">
               <div class="hero-slide__img-wrapper">
                 <picture>
-                  <source media="(max-width: 767px)" type="image/webp" srcset="img/content/hero/hero-img-mobile-1@1x.webp 1x, img/content/hero/hero-img-mobile-1@2x.webp 2x">
-                  <source media="(max-width: 1439px)" type="image/webp" srcset="img/content/hero/hero-img-tablet-1@1x.webp 1x, img/content/hero/hero-img-tablet-1@2x.webp 2x">
-                  <source type="image/webp" srcset="img/content/hero/hero-img-desktop-1@1x.webp 1x, img/content/hero/hero-img-desktop-1@2x.webp 2x">
+                  <source media="(max-width: 767px)" type="image/webp" srcset="img/content/hero/hero-img-mobile-3@1x.webp 1x, img/content/hero/hero-img-mobile-3@2x.webp 2x">
+                  <source media="(max-width: 1439px)" type="image/webp" srcset="img/content/hero/hero-img-tablet-3@1x.webp 1x, img/content/hero/hero-img-tablet-3@2x.webp 2x">
+                  <source type="image/webp" srcset="img/content/hero/hero-img-desktop-3@1x.webp 1x, img/content/hero/hero-img-desktop-3@2x.webp 2x">
 
-                  <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/hero/hero-img-mobile-1@1x.jpg 1x, img/content/hero/hero-img-mobile-1@2x.jpg 2x">
-                  <source media="(max-width: 1439px)" type="image/jpg" srcset="img/content/hero/hero-img-tablet-1@1x.jpg 1x, img/content/hero/hero-img-tablet-1@2x.jpg 2x">
-                  <img src="img/content/hero/hero-img-desktop-1@1x.jpg" srcset="img/content/hero/hero-img-desktop-1@2x.jpg 2x" width="1440" height="800" alt="Девушка на фоне здания.">
+                  <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/hero/hero-img-mobile-3@1x.jpg 1x, img/content/hero/hero-img-mobile-3@2x.jpg 2x">
+                  <source media="(max-width: 1439px)" type="image/jpg" srcset="img/content/hero/hero-img-tablet-3@1x.jpg 1x, img/content/hero/hero-img-tablet-3@2x.jpg 2x">
+                  <img src="img/content/hero/hero-img-desktop-3@1x.jpg" srcset="img/content/hero/hero-img-desktop-3@2x.jpg 2x" width="1440" height="800" alt="Девушка на фоне здания.">
                 </picture>
               </div>
               <div class="container hero-slide__container">
@@ -126,7 +143,7 @@
 
                   <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/hero/hero-img-mobile-2@1x.jpg 1x, img/content/hero/hero-img-mobile-2@2x.jpg 2x">
                   <source media="(max-width: 1439px)" type="image/jpg" srcset="img/content/hero/hero-img-tablet-2@1x.jpg 1x, img/content/hero/hero-img-tablet-2@2x.jpg 2x">
-                  <img src="img/content/hero/hero-img-desktop-2@1x.jpg" srcset="img/content/hero/hero-img-desktop-2@2x.jpg 2x" width="1440" height="800" alt="Группа людей.">
+                  <img src="img/content/hero/hero-img-desktop-2@1x.jpg" srcset="img/content/hero/hero-img-desktop-2@2x.jpg 2x" width="1440" height="800" loading="lazy" alt="Группа людей.">
                 </picture>
               </div>
               <div class="container hero-slide__container">
@@ -277,7 +294,7 @@
 
                     <source media="(max-width: 767px)" type="image/png" srcset="img/content/programs/programs-img-mobile-1@1x.png 1x, img/content/programs/programs-img-mobile-1@2x.png 2x">
                     <source media="(max-width: 1439px)" type="image/png" srcset="img/content/programs/programs-img-tablet-1@1x.png 1x, img/content/programs/programs-img-tablet-1@2x.png 2x">
-                    <img src="img/content/programs/programs-img-desktop-1@1x.png" srcset="img/content/programs/programs-img-desktop-1@2x.png 2x" width="392" height="420" alt="Девушки анализируют информацию.">
+                    <img src="img/content/programs/programs-img-desktop-1@1x.png" srcset="img/content/programs/programs-img-desktop-1@2x.png 2x" width="392" height="420" loading="lazy" alt="Девушки анализируют информацию.">
                   </picture>
                 </div>
                 <div class="programs-slide__container">
@@ -305,7 +322,7 @@
 
                     <source media="(max-width: 767px)" type="image/png" srcset="img/content/programs/programs-img-mobile-3@1x.png 1x, img/content/programs/programs-img-mobile-3@2x.png 2x">
                     <source media="(max-width: 1439px)" type="image/png" srcset="img/content/programs/programs-img-tablet-3@1x.png 1x, img/content/programs/programs-img-tablet-3@2x.png 2x">
-                    <img src="img/content/programs/programs-img-desktop-3@1x.png" srcset="img/content/programs/programs-img-desktop-3@2x.png 2x" width="392" height="420" alt="Девушки анализируют информацию.">
+                    <img src="img/content/programs/programs-img-desktop-3@1x.png" srcset="img/content/programs/programs-img-desktop-3@2x.png 2x" width="392" height="420" loading="lazy" alt="Волонтер держит землю с ростоком в руках.">
                   </picture>
                 </div>
                 <div class="programs-slide__container">
@@ -333,7 +350,7 @@
 
                     <source media="(max-width: 767px)" type="image/png" srcset="img/content/programs/programs-img-mobile-2@1x.png 1x, img/content/programs/programs-img-mobile-2@2x.png 2x">
                     <source media="(max-width: 1439px)" type="image/png" srcset="img/content/programs/programs-img-tablet-2@1x.png 1x, img/content/programs/programs-img-tablet-2@2x.png 2x">
-                    <img src="img/content/programs/programs-img-desktop-2@1x.png" srcset="img/content/programs/programs-img-desktop-2@2x.png 2x" width="392" height="420" alt="Девушки анализируют информацию.">
+                    <img src="img/content/programs/programs-img-desktop-2@1x.png" srcset="img/content/programs/programs-img-desktop-2@2x.png 2x" width="392" height="420" loading="lazy" alt="Мужчина в очках учится в окружении книг.">
                   </picture>
                 </div>
                 <div class="programs-slide__container">
@@ -361,7 +378,7 @@
 
                     <source media="(max-width: 767px)" type="image/png" srcset="img/content/programs/programs-img-mobile-1@1x.png 1x, img/content/programs/programs-img-mobile-1@2x.png 2x">
                     <source media="(max-width: 1439px)" type="image/png" srcset="img/content/programs/programs-img-tablet-1@1x.png 1x, img/content/programs/programs-img-tablet-1@2x.png 2x">
-                    <img src="img/content/programs/programs-img-desktop-1@1x.png" srcset="img/content/programs/programs-img-desktop-1@2x.png 2x" width="392" height="420" alt="Девушки анализируют информацию.">
+                    <img src="img/content/programs/programs-img-desktop-1@1x.png" srcset="img/content/programs/programs-img-desktop-1@2x.png 2x" width="392" height="420" loading="lazy" alt="Девушки анализируют информацию.">
                   </picture>
                 </div>
                 <div class="programs-slide__container">
@@ -389,7 +406,7 @@
 
                     <source media="(max-width: 767px)" type="image/png" srcset="img/content/programs/programs-img-mobile-3@1x.png 1x, img/content/programs/programs-img-mobile-3@2x.png 2x">
                     <source media="(max-width: 1439px)" type="image/png" srcset="img/content/programs/programs-img-tablet-3@1x.png 1x, img/content/programs/programs-img-tablet-3@2x.png 2x">
-                    <img src="img/content/programs/programs-img-desktop-3@1x.png" srcset="img/content/programs/programs-img-desktop-3@2x.png 2x" width="392" height="420" alt="Девушки анализируют информацию.">
+                    <img src="img/content/programs/programs-img-desktop-3@1x.png" srcset="img/content/programs/programs-img-desktop-3@2x.png 2x" width="392" height="420" loading="lazy" alt="Волонтер держит землю с ростоком в руках.">
                   </picture>
                 </div>
                 <div class="programs-slide__container">
@@ -417,7 +434,7 @@
 
                     <source media="(max-width: 767px)" type="image/png" srcset="img/content/programs/programs-img-mobile-2@1x.png 1x, img/content/programs/programs-img-mobile-2@2x.png 2x">
                     <source media="(max-width: 1439px)" type="image/png" srcset="img/content/programs/programs-img-tablet-2@1x.png 1x, img/content/programs/programs-img-tablet-2@2x.png 2x">
-                    <img src="img/content/programs/programs-img-desktop-2@1x.png" srcset="img/content/programs/programs-img-desktop-2@2x.png 2x" width="392" height="420" alt="Девушки анализируют информацию.">
+                    <img src="img/content/programs/programs-img-desktop-2@1x.png" srcset="img/content/programs/programs-img-desktop-2@2x.png 2x" width="392" height="420" loading="lazy" alt="Мужчина в очках учится в окружении книг.">
                   </picture>
                 </div>
                 <div class="programs-slide__container">
@@ -467,7 +484,7 @@
 
                 <source media="(max-width: 767px)" type="image/png" srcset="img/content/grant/grant-img-mobile@1x.png 1x, img/content/grant/grant-img-mobile@2x.png 2x">
                 <source media="(max-width: 1439px)" type="image/png" srcset="img/content/grant/grant-img-tablet@1x.png 1x, img/content/grant/grant-img-tablet@2x.png 2x">
-                <img src="img/content/grant/grant-img-desktop@1x.png" srcset="img/content/grant/grant-img-desktop@2x.png 2x" width="498" height="363" alt="Столб с указателями.">
+                <img src="img/content/grant/grant-img-desktop@1x.png" srcset="img/content/grant/grant-img-desktop@2x.png 2x" width="498" height="363" loading="lazy" alt="Столб с указателями.">
               </picture>
             </div>
           </div>
@@ -545,7 +562,7 @@
 
                     <source media="(max-width: 767px)" type="image/png" srcset="img/content/news/news-img-mobile-1@1x.png 1x, img/content/news/news-img-mobile-1@2x.png 2x">
                     <source media="(max-width: 1439px)" type="image/png" srcset="img/content/news/news-img-tablet-1@1x.png 1x, img/content/news/news-img-tablet-1@2x.png 2x">
-                    <img src="img/content/news/news-img-desktop-1@1x.png" srcset="img/content/news/news-img-desktop-1@2x.png 2x" width="604" height="400" alt="У девушки берут интервью на фоне полок с книгами.">
+                    <img src="img/content/news/news-img-desktop-1@1x.png" srcset="img/content/news/news-img-desktop-1@2x.png 2x" width="604" height="400" loading="lazy" alt="У девушки берут интервью на фоне полок с книгами.">
                   </picture>
                 </div>
                 <div class="news-slide__container">
@@ -578,7 +595,7 @@
 
                     <source media="(max-width: 767px)" type="image/png" srcset="img/content/news/news-img-mobile-2@1x.png 1x, img/content/news/news-img-mobile-2@2x.png 2x">
                     <source media="(max-width: 1439px)" type="image/png" srcset="img/content/news/news-img-tablet-2@1x.png 1x, img/content/news/news-img-tablet-2@2x.png 2x">
-                    <img src="img/content/news/news-img-desktop-2@1x.png" srcset="img/content/news/news-img-desktop-2@2x.png 2x" width="286" height="400" alt="Дома у пляжа.">
+                    <img src="img/content/news/news-img-desktop-2@1x.png" srcset="img/content/news/news-img-desktop-2@2x.png 2x" width="286" height="400" loading="lazy" alt="Дома у пляжа.">
                   </picture>
                 </div>
                 <div class="news-slide__container">
@@ -611,7 +628,7 @@
 
                     <!-- <source media="(max-width: 767px)" type="image/png" srcset="img/content/news/news-img-mobile-3@1x.png 1x, img/content/news/news-img-mobile-3@2x.png 2x"> -->
                     <source media="(max-width: 1439px)" type="image/png" srcset="img/content/news/news-img-tablet-3@1x.png 1x, img/content/news/news-img-tablet-3@2x.png 2x">
-                    <img src="img/content/news/news-img-desktop-3@1x.png" srcset="img/content/news/news-img-desktop-3@2x.png 2x" width="286" height="400" alt="Девушка держит значок 'Volunteer' на фоне оранжевой футблоки.">
+                    <img src="img/content/news/news-img-desktop-3@1x.png" srcset="img/content/news/news-img-desktop-3@2x.png 2x" width="286" height="400" loading="lazy" alt="Девушка держит значок 'Volunteer' на фоне оранжевой футблоки.">
                   </picture>
                 </div>
                 <div class="news-slide__container">
@@ -644,7 +661,7 @@
 
                     <!-- <source media="(max-width: 767px)" type="image/png" srcset="img/content/news/news-img-mobile-4@1x.png 1x, img/content/news/news-img-mobile-4@2x.png 2x"> -->
                     <source media="(max-width: 1439px)" type="image/png" srcset="img/content/news/news-img-tablet-4@1x.png 1x, img/content/news/news-img-tablet-4@2x.png 2x">
-                    <img src="img/content/news/news-img-desktop-4@1x.png" srcset="img/content/news/news-img-desktop-4@2x.png 2x" width="286" height="400" alt="Вид сверху на стол с двумя ноутбуками и канцелярией.">
+                    <img src="img/content/news/news-img-desktop-4@1x.png" srcset="img/content/news/news-img-desktop-4@2x.png 2x" width="286" height="400" loading="lazy" alt="Вид сверху на стол с двумя ноутбуками и канцелярией.">
                   </picture>
                 </div>
                 <div class="news-slide__container">
@@ -679,7 +696,7 @@
 
                     <source media="(max-width: 767px)" type="image/png" srcset="img/content/news/news-img-mobile-1@1x.png 1x, img/content/news/news-img-mobile-1@2x.png 2x">
                     <source media="(max-width: 1439px)" type="image/png" srcset="img/content/news/news-img-tablet-1@1x.png 1x, img/content/news/news-img-tablet-1@2x.png 2x">
-                    <img src="img/content/news/news-img-desktop-1@1x.png" srcset="img/content/news/news-img-desktop-1@2x.png 2x" width="604" height="400" alt="У девушки берут интервью на фоне полок с книгами.">
+                    <img src="img/content/news/news-img-desktop-1@1x.png" srcset="img/content/news/news-img-desktop-1@2x.png 2x" width="604" height="400" loading="lazy" alt="У девушки берут интервью на фоне полок с книгами.">
                   </picture>
                 </div>
                 <div class="news-slide__container">
@@ -712,7 +729,7 @@
 
                     <source media="(max-width: 767px)" type="image/png" srcset="img/content/news/news-img-mobile-2@1x.png 1x, img/content/news/news-img-mobile-2@2x.png 2x">
                     <source media="(max-width: 1439px)" type="image/png" srcset="img/content/news/news-img-tablet-2@1x.png 1x, img/content/news/news-img-tablet-2@2x.png 2x">
-                    <img src="img/content/news/news-img-desktop-2@1x.png" srcset="img/content/news/news-img-desktop-2@2x.png 2x" width="286" height="400" alt="Дома у пляжа.">
+                    <img src="img/content/news/news-img-desktop-2@1x.png" srcset="img/content/news/news-img-desktop-2@2x.png 2x" width="286" height="400" loading="lazy" alt="Дома у пляжа.">
                   </picture>
                 </div>
                 <div class="news-slide__container">
@@ -745,7 +762,7 @@
 
                     <!-- <source media="(max-width: 767px)" type="image/png" srcset="img/content/news/news-img-mobile-3@1x.png 1x, img/content/news/news-img-mobile-3@2x.png 2x"> -->
                     <source media="(max-width: 1439px)" type="image/png" srcset="img/content/news/news-img-tablet-3@1x.png 1x, img/content/news/news-img-tablet-3@2x.png 2x">
-                    <img src="img/content/news/news-img-desktop-3@1x.png" srcset="img/content/news/news-img-desktop-3@2x.png 2x" width="286" height="400" alt="Девушка держит значок 'Volunteer' на фоне оранжевой футблоки.">
+                    <img src="img/content/news/news-img-desktop-3@1x.png" srcset="img/content/news/news-img-desktop-3@2x.png 2x" width="286" height="400" loading="lazy" alt="Девушка держит значок 'Volunteer' на фоне оранжевой футблоки.">
                   </picture>
                 </div>
                 <div class="news-slide__container">
@@ -856,7 +873,7 @@
                         <source type="image/webp" srcset="img/content/reviews/reviews-img-desktop-1@1x.webp 1x, img/content/reviews/reviews-img-desktop-1@2x.webp 2x">
 
                         <source media="(max-width: 767px)" type="image/png" srcset="img/content/reviews/reviews-img-mobile-1@1x.png 1x, img/content/reviews/reviews-img-mobile-1@2x.png 2x">
-                        <img src="img/content/reviews/reviews-img-desktop-1@1x.png" srcset="img/content/reviews/reviews-img-desktop-1@2x.png 2x" width="90" height="90" alt="Фото Лолы Алекс.">
+                        <img src="img/content/reviews/reviews-img-desktop-1@1x.png" srcset="img/content/reviews/reviews-img-desktop-1@2x.png 2x" width="90" height="90" loading="lazy" alt="Фото Лолы Алекс.">
                       </picture>
                     </div>
                     <div class="reviews-slide__text-content">
@@ -903,7 +920,7 @@
                         <source type="image/webp" srcset="img/content/reviews/reviews-img-desktop-2@1x.webp 1x, img/content/reviews/reviews-img-desktop-2@2x.webp 2x">
 
                         <source media="(max-width: 767px)" type="image/png" srcset="img/content/reviews/reviews-img-mobile-2@1x.png 1x, img/content/reviews/reviews-img-mobile-2@2x.png 2x">
-                        <img src="img/content/reviews/reviews-img-desktop-2@1x.png" srcset="img/content/reviews/reviews-img-desktop-2@2x.png 2x" width="90" height="90" alt="Фото Давида Иванова.">
+                        <img src="img/content/reviews/reviews-img-desktop-2@1x.png" srcset="img/content/reviews/reviews-img-desktop-2@2x.png 2x" width="90" height="90" loading="lazy" alt="Фото Давида Иванова.">
                       </picture>
                     </div>
                     <div class="reviews-slide__text-content">
@@ -950,7 +967,7 @@
                         <source type="image/webp" srcset="img/content/reviews/reviews-img-desktop-1@1x.webp 1x, img/content/reviews/reviews-img-desktop-1@2x.webp 2x">
 
                         <source media="(max-width: 767px)" type="image/png" srcset="img/content/reviews/reviews-img-mobile-1@1x.png 1x, img/content/reviews/reviews-img-mobile-1@2x.png 2x">
-                        <img src="img/content/reviews/reviews-img-desktop-1@1x.png" srcset="img/content/reviews/reviews-img-desktop-1@2x.png 2x" width="90" height="90" alt="Фото Лолы Алекс.">
+                        <img src="img/content/reviews/reviews-img-desktop-1@1x.png" srcset="img/content/reviews/reviews-img-desktop-1@2x.png 2x" width="90" height="90" loading="lazy" alt="Фото Лолы Алекс.">
                       </picture>
                     </div>
                     <div class="reviews-slide__text-content">
@@ -997,7 +1014,7 @@
                         <source type="image/webp" srcset="img/content/reviews/reviews-img-desktop-2@1x.webp 1x, img/content/reviews/reviews-img-desktop-2@2x.webp 2x">
 
                         <source media="(max-width: 767px)" type="image/png" srcset="img/content/reviews/reviews-img-mobile-2@1x.png 1x, img/content/reviews/reviews-img-mobile-2@2x.png 2x">
-                        <img src="img/content/reviews/reviews-img-desktop-2@1x.png" srcset="img/content/reviews/reviews-img-desktop-2@2x.png 2x" width="90" height="90" alt="Фото Давида Иванова.">
+                        <img src="img/content/reviews/reviews-img-desktop-2@1x.png" srcset="img/content/reviews/reviews-img-desktop-2@2x.png 2x" width="90" height="90" loading="lazy" alt="Фото Давида Иванова.">
                       </picture>
                     </div>
                     <div class="reviews-slide__text-content">
@@ -1087,7 +1104,7 @@
 
               <source media="(max-width: 767px)" type="image/png" srcset="img/content/map-img-mobile@1x.png 1x, img/content/map-img-mobile@2x.png 2x">
               <source media="(max-width: 1439px)" type="image/png" srcset="img/content/map-img-tablet@1x.png 1x, img/content/map-img-tablet@2x.png 2x">
-              <img src="img/content/map-img-desktop@1x.png" srcset="img/content/map-img-desktop@2x.png 2x" width="1240" height="500" alt="Адрес на карте: г. Новосибирск, ул. Щетинкина 68, культурный центр.">
+              <img src="img/content/map-img-desktop@1x.png" srcset="img/content/map-img-desktop@2x.png 2x" width="1240" height="500" loading="lazy" alt="Адрес на карте: г. Новосибирск, ул. Щетинкина 68, культурный центр.">
             </picture>
           </div>
         </div>
@@ -1155,7 +1172,7 @@
 
                 <source media="(max-width: 767px)" type="image/png" srcset="img/content/main-form/main-form-img-mobile@1x.png 1x, img/content/main-form/main-form-img-mobile@2x.png 2x">
                 <source media="(max-width: 1439px)" type="image/png" srcset="img/content/main-form/main-form-img-tablet@1x.png 1x, img/content/main-form/main-form-img-tablet@2x.png 2x">
-                <img src="img/content/main-form/main-form-img-desktop@1x.png" srcset="img/content/main-form/main-form-img-desktop@2x.png 2x" width="1240" height="803" alt="Вид на город с высоты птичьего полёта.">
+                <img src="img/content/main-form/main-form-img-desktop@1x.png" srcset="img/content/main-form/main-form-img-desktop@2x.png 2x" width="1240" height="803" loading="lazy" alt="Вид на город с высоты птичьего полёта.">
               </picture>
             </div>
           </div>
@@ -1166,7 +1183,7 @@
       <div class="container footer__container">
         <div class="footer__row-wrapper">
           <div class="footer__logo-wrapper">
-            <img src="img/svg/logo.svg" width="52" height="52" alt="">
+            <img src="img/svg/logo.svg" width="52" height="52" loading="lazy" alt="">
           </div>
           <nav class="footer__nav">
             <ul class="footer__list list">
