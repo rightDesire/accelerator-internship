@@ -4,7 +4,11 @@
   column-gap: 12px;
   padding: 14px 20px;
 
-  @media (width <= 767px) {
+  @include vp-tablet {
+    column-gap: 30px; // Из-за SEO lighthouse
+  }
+
+  @include vp-mobile {
     padding: 10px 16px;
   }
 }
@@ -22,14 +26,26 @@
   align-items: center;
   width: 10px;
   height: 10px;
+  min-width: 10px;
+  min-height: 10px;
   border: 1px solid #316dc2;
   opacity: 1;
   color: $color-additional-text;
   background-color: transparent;
 
-  @media (width <= 767px) {
+  @include vp-tablet {
+    &::after {
+      content: "";
+      display: block;
+      padding: 20px 20px;
+    }
+  }
+
+  @include vp-mobile {
     width: 8px;
     height: 8px;
+    min-width: 8px;
+    min-height: 8px;
   }
 }
 

@@ -4,25 +4,29 @@
 
 .hero-swiper__pagination-wrapper {
   position: relative;
-  top: 409px;
+  top: 395px;
 
   @include vp-tablet {
-    top: 695px;
+    top: 653px;
   }
 
   @include vp-mobile {
-    top: 204px;
+    top: 213px;
   }
 }
 
 .hero-swiper__pagination-wrapper > .hero-swiper__pagination {
   width: 94px;
   height: 38px;
-  border-radius: 20px 20px 0 0;
+  border-radius: 12px 12px 0px 0px;
   background-color: $color-default-white;
 
+  @include vp-tablet {
+    width: auto;
+  }
+
   @include vp-mobile {
-    width: 80px;
+
     height: 28px;
   }
 

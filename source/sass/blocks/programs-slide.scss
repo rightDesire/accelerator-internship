@@ -21,6 +21,7 @@
   @include vp-mobile {
     min-height: 400px;
     padding: 10px;
+    padding-bottom: 18px;
   }
 }
 
@@ -98,16 +99,20 @@
   justify-content: space-between;
   align-items: center;
   width: 321px;
+  min-height: 79px;
   padding: 12px 18px 15px;
   background-color: $color-default-white;
   border-radius: 0 12px 12px;
 
   @include vp-tablet {
     width: 263px;
+    min-height: 77px;
+    padding: 10px 14px 10px 18px;
   }
 
   @include vp-mobile {
     width: 270px;
+    min-height: 69px;
   }
 }
 

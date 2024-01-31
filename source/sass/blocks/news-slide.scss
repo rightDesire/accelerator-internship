@@ -71,7 +71,7 @@
   max-width: 80px;
   min-width: 78px;
   color: $color-additional-text;
-  background-color: $color-dark-theme-text;
+  background-color: $color-default-white;
   padding: 9px 12px 4px 0;
   border-radius: 0 12px 0 0;
 
@@ -89,7 +89,7 @@
     display: block;
     width: 18px;
     height: 18px;
-    background-color: $color-dark-theme-text;
+    background-color: $color-default-white;
     mask-image: url("../../img/svg/angle.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -131,7 +131,7 @@
   margin: 0;
   padding: 10px 10px 4px 0;
   color: $color-additional-text;
-  background-color: $color-dark-theme-text;
+  background-color: $color-default-white;
   border-radius: 0 12px 0 0;
   word-wrap: break-word;
 
@@ -170,7 +170,7 @@
     display: block;
     width: 18px;
     height: 18px;
-    background-color: $color-dark-theme-text;
+    background-color: $color-default-white;
     mask-image: url("../../img/svg/angle.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -206,7 +206,7 @@
   column-gap: 16px;
   width: 240px;
   padding: 12px 18px 15px 0;
-  background-color: $color-dark-theme-text;
+  background-color: $color-default-white;
   border-radius: 0 12px 0 0;
 
   @include vp-tablet {
@@ -226,7 +226,7 @@
     display: block;
     width: 18px;
     height: 18px;
-    background-color: $color-dark-theme-text;
+    background-color: $color-default-white;
     mask-image: url("../../img/svg/angle.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;

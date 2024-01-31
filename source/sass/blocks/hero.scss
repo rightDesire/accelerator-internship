@@ -1,0 +1,11 @@
+.hero {
+  margin-bottom: 120px;
+
+  @include vp-tablet {
+    margin-bottom: 100px;
+  }
+
+  @include vp-mobile {
+    margin-bottom: 60px;
+  }
+}

@@ -41,16 +41,16 @@
 }
 
 .hero-slide__container {
-  margin-top: 347px;
+  margin-top: 333px;
   padding-top: 100px;
   padding-bottom: 60px;
 
   @include vp-tablet {
-    margin-top: 633px;
+    margin-top: 591px;
   }
 
   @include vp-mobile {
-    margin-top: 141px;
+    margin-top: 151px;
     padding-top: 90px;
     padding-bottom: 20px;
   }
@@ -69,6 +69,7 @@
 
   @include vp-tablet {
     width: 591px;
+    min-height: 131px;
     padding: 0 40px;
     padding-bottom: 35px;
   }
@@ -156,8 +157,9 @@
 
   @include vp-mobile {
     position: relative;
-    width: 261px;
-    padding: 0 14px 15px;
+    width: 267px;
+    margin-top: -5px; // Подгон
+    padding: 0 14px 10px;
     background-color: $color-default-white;
     border-radius: 0 0 14px;
 
@@ -168,7 +170,7 @@
       @include vp-mobile {
         content: "";
         position: absolute;
-        top: 0;
+        top: 5px; // Подгон
         right: 0;
         display: block;
         width: 10px;
@@ -219,6 +221,8 @@
   @include vp-mobile {
     width: 152px;
     min-height: 42px;
+    padding-top: 3px; // Подгон
+    padding-bottom: 3px; // Подгон
     padding-left: 20px;
     column-gap: 20px;
 

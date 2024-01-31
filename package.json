@@ -1,4 +1,5 @@
 {
+  "homepage": "http://rightDesire.github.io/accelerator-internship",
   "name": "internship-2024",
   "private": true,
   "version": "0.0.1",
@@ -8,6 +9,7 @@
     "test": "backstop test --config=pp.config.cjs",
     "build": "vite build",
     "preview": "vite preview --open",
+    "deploy": "gh-pages -d dist",
     "convert-rastr": "node convert-rastr.js",
     "w3c": "html-validator source --quiet",
     "linthtml": "linthtml source",
@@ -27,6 +29,7 @@
     "cli-progress": "3.12.0",
     "eslint": "8.55.0",
     "eslint-config-htmlacademy": "^10.0.1",
+    "gh-pages": "^6.1.1",
     "glob": "10.3.10",
     "html-validate": "8.7.4",
     "linthtml-config-htmlacademy": "^1.0.14",
