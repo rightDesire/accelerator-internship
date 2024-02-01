@@ -29,8 +29,10 @@
 .grant__title {
   max-width: 498px;
   margin: 0;
+  margin-top: 4px; // Подгон
+  margin-bottom: 29px;
+  color: $color-dark-theme-text;
   word-wrap: break-word;
-  margin-bottom: 30px;
 
   font-size: 50px;
   font-style: normal;
@@ -38,12 +40,16 @@
   line-height: 50px;
 
   @include vp-tablet {
+    margin-top: -2px; // Подгон
+    margin-bottom: 28px;
+
     font-size: 34px;
     line-height: 50px;
   }
 
   @include vp-mobile {
-    margin-bottom: 15px;
+    margin-top: 2px; // Подгон
+    margin-bottom: 13px;
 
     font-size: 20px;
     line-height: 20px;
@@ -54,7 +60,7 @@
   max-width: 498px;
   margin: 0;
   word-wrap: break-word;
-  margin-bottom: 40px;
+  margin-bottom: 33px;
 
   font-size: 16px;
   font-style: normal;
@@ -62,12 +68,14 @@
   line-height: 26px;
 
   @include vp-tablet {
+    margin-bottom: 36px;
+
     font-size: 16px;
     line-height: 20px;
   }
 
   @include vp-mobile {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 
     font-size: 14px;
     line-height: 20px;
@@ -76,11 +84,11 @@
 
 .grant__img-wrapper {
   @include vp-tablet {
-    margin-bottom: 40px;
+    margin-bottom: 48px;
   }
 
   @include vp-mobile {
-    margin-bottom: 30px;
+    margin-bottom: 38px;
   }
 }
 
@@ -101,7 +109,8 @@
 .grant__list-title {
   max-width: 373px;
   margin: 0;
-  margin-bottom: 40px;
+  margin-top: 8px; // Подгон
+  margin-bottom: 45px;
   word-wrap: break-word;
 
   font-size: 32px;
@@ -111,6 +120,8 @@
 
   @include vp-tablet {
     max-width: 626px;
+    margin-top: -3px; // Подгон
+    margin-bottom: 32px;
 
     font-size: 28px;
     line-height: 28px;
@@ -118,6 +129,7 @@
 
   @include vp-mobile {
     max-width: 210px;
+    margin-bottom: 16px;
 
     font-size: 18px;
     line-height: 22px;
@@ -127,7 +139,19 @@
 .grant__list {
   display: flex;
   flex-direction: column;
-  row-gap: 23px;
+  row-gap: 13px;
+
+  @include vp-tablet {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 26px;
+    row-gap: 15px;
+  }
+
+  @include vp-mobile {
+    display: flex;
+    row-gap: 5px;
+  }
 }
 
 .grant__item {
@@ -135,17 +159,25 @@
   max-width: 478px;
   margin-top: 10px;
   margin-left: 20px;
-  padding: 30px 25px;
+  padding: 23px 25px;
+  padding-bottom: 21px;
   border: 1px solid $color-dark-theme-text;
   border-radius: 16px;
   counter-increment: grant-counter;
 
   @include vp-tablet {
     max-width: 305px;
+    padding: 21px 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 24px;
   }
 
   @include vp-mobile {
     max-width: 275px;
+    margin-left: 15px;
+    padding-top: 18px;
+    padding-bottom: 18px;
   }
 
   &::before {
@@ -169,18 +201,36 @@
     text-transform: uppercase;
 
     @include vp-mobile {
-      top: -16px;
-      left: -16px;
-      width: 32px;
+      top: -6px;
+      left: -12px;
+      width: 24px;
       height: 32px;
 
+      font-weight: 400;
       font-size: 18px;
       line-height: 18px;
     }
   }
 }
 
-.grant__item span {
-  max-width: inherit;
+.grant__item p {
+  max-width: 380px;
+  margin: 0;
+  color: $color-dark-theme-text;
   word-wrap: break-word;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+
+  @include vp-tablet {
+    max-width: inherit;
+
+    line-height: 20px;
+  }
+
+  @include vp-mobile {
+    font-size: 14px;
+  }
 }
