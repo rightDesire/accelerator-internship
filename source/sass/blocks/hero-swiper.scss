@@ -39,7 +39,7 @@
     width: 20px;
     height: 20px;
     background-color: $color-default-white;
-    mask-image: url("../../img/svg/angle.svg");
+    mask-image: url("/img/svg/angle.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     transform: translateX(100%);
@@ -48,7 +48,7 @@
       width: 10px;
       height: 10px;
       background-color: $color-default-white;
-      mask-image: url("../../img/svg/angle-mobile.svg");
+      mask-image: url("/img/svg/angle-mobile.svg");
     }
   }
 }

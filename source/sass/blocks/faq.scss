@@ -1,20 +1,21 @@
 .faq {
-  padding-bottom: 120px;
-  background-color: $color-default-white;
+  margin-bottom: 120px;
+  background-color: $color-dark-theme-text;
 
   @include vp-tablet {
-    padding-bottom: 100px;
+    margin-bottom: 100px;
   }
 
   @include vp-mobile {
-    padding-bottom: 60px;
+    margin-bottom: 60px;
   }
 }
 
 .faq__title {
   max-width: 500px;
   margin: 0 auto;
-  margin-bottom: 73px;
+  padding-top: 3px; // Подгон
+  margin-bottom: 67px;
   color: $color-additional-text;
   text-align: center;
   word-wrap: break-word;
@@ -26,7 +27,8 @@
 
   @include vp-tablet {
     max-width: 300px;
-    margin-bottom: 53px;
+    margin-bottom: 40px;
+    padding: 0;
 
     font-size: 34px;
     font-style: normal;

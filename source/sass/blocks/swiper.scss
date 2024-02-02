@@ -33,19 +33,21 @@
   color: $color-additional-text;
   background-color: transparent;
 
+  @include vp-mobile {
+    width: 8px;
+    height: 8px;
+    min-width: 8px;
+    min-height: 8px;
+  }
+}
+
+.hero-swiper__pagination .swiper-pagination-bullet {
   @include vp-tablet {
     &::after {
       content: "";
       display: block;
       padding: 20px 20px;
     }
-  }
-
-  @include vp-mobile {
-    width: 8px;
-    height: 8px;
-    min-width: 8px;
-    min-height: 8px;
   }
 }
 

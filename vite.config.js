@@ -7,7 +7,7 @@ export default {
   plugins: [
     VitePluginSvgSpritemap('source/img/sprite/*.svg', {
       styles: 'sass/spritemap.scss',
-      injectSVGOnDev: false,
+      injectSVGOnDev: true,
     }),
     // input https://www.npmjs.com/package/html-minifier-terser options
     ViteMinifyPlugin({}),

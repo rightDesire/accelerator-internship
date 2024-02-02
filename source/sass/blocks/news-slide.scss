@@ -71,8 +71,8 @@
   max-width: 80px;
   min-width: 78px;
   color: $color-additional-text;
-  background-color: $color-default-white;
-  padding: 9px 12px 4px 0;
+  background-color: $color-dark-theme-text;
+  padding: 11px 12px 2px 0;
   border-radius: 0 12px 0 0;
 
   font-size: 12px;
@@ -89,8 +89,8 @@
     display: block;
     width: 18px;
     height: 18px;
-    background-color: $color-default-white;
-    mask-image: url("../../img/svg/angle.svg");
+    background-color: $color-dark-theme-text;
+    mask-image: url("/img/svg/angle.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     pointer-events: none;
@@ -131,7 +131,7 @@
   margin: 0;
   padding: 10px 10px 4px 0;
   color: $color-additional-text;
-  background-color: $color-default-white;
+  background-color: $color-dark-theme-text;
   border-radius: 0 12px 0 0;
   word-wrap: break-word;
 
@@ -141,8 +141,9 @@
   line-height: 26px;
 
   @include vp-tablet {
-    width: 173px;
+    width: 207px;
     max-height: 110px;
+    padding: 5px 10px 5px 0;
     overflow-y: auto;
     overflow-x: hidden;
     word-wrap: break-word;
@@ -152,10 +153,30 @@
   }
 
   @include vp-mobile {
-    width: 146px;
+    width: 200px;
+    padding: 10px 10px 5px 0;
 
     font-size: 16px;
     line-height: 18px;
+  }
+}
+
+.news-slide--big .news-slide__text-content > h3 {
+  width: 291px;
+  padding: 18px 18px 6px 0;
+
+  @include vp-tablet {
+    width: 207px;
+    max-height: 110px;
+    padding: 5px 10px 5px 0;
+    word-wrap: break-word;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  @include vp-mobile {
+    width: 200px;
+    padding: 10px 10px 5px 0;
   }
 }
 
@@ -170,31 +191,12 @@
     display: block;
     width: 18px;
     height: 18px;
-    background-color: $color-default-white;
-    mask-image: url("../../img/svg/angle.svg");
+    background-color: $color-dark-theme-text;
+    mask-image: url("/img/svg/angle.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     transform: translateX(100%);
     pointer-events: none;
-  }
-}
-
-.news-slide--big .news-slide__text-content > h3 {
-  width: 291px;
-  padding: 18px 18px 6px 0;
-
-  @include vp-tablet {
-    width: 173px;
-    max-height: 110px;
-    padding: 10px 10px 4px 0;
-
-    word-wrap: break-word;
-    overflow-y: auto;
-    overflow-x: hidden;
-  }
-
-  @include vp-mobile {
-    width: 146px;
   }
 }
 
@@ -206,16 +208,17 @@
   column-gap: 16px;
   width: 240px;
   padding: 12px 18px 15px 0;
-  background-color: $color-default-white;
+  background-color: $color-dark-theme-text;
   border-radius: 0 12px 0 0;
 
   @include vp-tablet {
-    width: 263px;
+    width: 240px;
+    padding: 3px 10px 10px 0;
   }
 
   @include vp-mobile {
-    width: 270px;
-    padding: 5px 10px 3px 0;
+    width: 263px;
+    padding: 4px 10px 4px 0;
   }
 
   &::after {
@@ -226,8 +229,8 @@
     display: block;
     width: 18px;
     height: 18px;
-    background-color: $color-default-white;
-    mask-image: url("../../img/svg/angle.svg");
+    background-color: $color-dark-theme-text;
+    mask-image: url("/img/svg/angle.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     transform: translateX(100%);
@@ -240,7 +243,11 @@
 
   @include vp-tablet {
     width: 263px;
-    padding: 11px 10px 9px 0;
+    padding: 3px 10px 10px 0;
+  }
+
+  @include vp-mobile {
+    padding: 12px 10px 7px 0; ///
   }
 }
 

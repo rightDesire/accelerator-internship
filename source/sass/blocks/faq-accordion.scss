@@ -1,14 +1,24 @@
+.faq-accordion {
+  padding: 0 106px;
+
+  @include vp-tablet {
+    padding: 0;
+  }
+}
+
 .faq-accordion__element {
   width: 100%;
-  padding: 40px;
+  padding: 40px 37px;
+  padding-top: 36px;
+  padding-bottom: 38px;
   color: $color-additional-text;
   border: 1px solid $color-additional-text;
   border-radius: 16px;
-  background-color: $color-default-white;
+  background-color: $color-dark-theme-text;
   text-align: start;
 
   @include vp-tablet {
-    padding: 30px;
+    padding: 27px;
   }
 
   @include vp-mobile {
@@ -63,7 +73,7 @@
     background-color: $color-additional-text;
     border-radius: 30px;
     border: 1px solid transparent;
-    background-image: url("../../img/svg/plus.svg");
+    background-image: url("/img/svg/plus.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 20px;
@@ -76,7 +86,7 @@
     &::after {
       background-color: transparent;
       border-color: $color-additional-text;
-      background-image: url("../../img/svg/plus-alt.svg");
+      background-image: url("/img/svg/plus-alt.svg");
     }
   }
 
@@ -84,7 +94,7 @@
     &::after {
       background-color: $color-active;
       border-color: transparent;
-      background-image: url("../../img/svg/plus.svg");
+      background-image: url("/img/svg/plus.svg");
     }
   }
 }
@@ -94,7 +104,7 @@
 
   &::after {
     background-color: $color-default-white;
-    background-image: url("../../img/svg/minus.svg");
+    background-image: url("/img/svg/minus.svg");
   }
 
   @include hover-focus {
@@ -103,7 +113,7 @@
     &::after {
       background-color: transparent;
       border-color: $color-default-white;
-      background-image: url("../../img/svg/minus-alt.svg");
+      background-image: url("/img/svg/minus-alt.svg");
     }
   }
 
@@ -111,20 +121,20 @@
     &::after {
       background-color: $color-default-white;
       border-color: transparent;
-      background-image: url("../../img/svg/minus.svg");
+      background-image: url("/img/svg/minus.svg");
     }
   }
 }
 
 .faq-accordion__button span {
   margin: 0;
-  max-width: 800px;
+  max-width: 650px;
   word-wrap: break-word;
 
   font-size: 28px;
   font-style: normal;
   font-weight: 400;
-  line-height: 34px;
+  line-height: 27px; // pixel perfect
 
   @include vp-tablet {
     max-width: 500px;
@@ -148,16 +158,19 @@
 .faq-accordion__wrapper p {
   max-width: 690px;
   margin: 0;
-  margin-top: 20px;
+  margin-top: 6px;
+  color: $color-dark-theme-text;
   word-wrap: break-word;
 
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 26px;
 
   @include vp-tablet {
-    max-width: 620px;
+    max-width: 560px;
+
+    line-height: 20px;
   }
 
   @include vp-mobile {

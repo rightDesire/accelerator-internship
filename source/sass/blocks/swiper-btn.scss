@@ -4,7 +4,7 @@
   width: 22px;
   height: 22px;
   background-color: transparent;
-  background-image: url("../../img/svg/arrow-swiper.svg");
+  background-image: url("/img/svg/arrow-swiper.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: 10px;
@@ -23,7 +23,7 @@
   &[aria-disabled="true"] {
     background-color: $color-disabled;
     background-image: none;
-    mask-image: url("../../img/svg/arrow-swiper.svg");
+    mask-image: url("/img/svg/arrow-swiper.svg");
     mask-repeat: no-repeat;
     mask-position: 50% 50%;
     mask-size: 10px;
