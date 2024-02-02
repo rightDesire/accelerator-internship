@@ -23,7 +23,7 @@ const initSlide = {
   newsTablet: 2,
   newsMobile: 1,
   reviewsDesktop: 2,
-  reviewsTablet: 1.24,
+  reviewsTablet: 1.27,
   reviewsMobile: 1,
 };
 
