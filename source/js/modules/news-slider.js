@@ -1,4 +1,5 @@
-import {Swiper} from '../vendor';
+import {Swiper} from 'swiper';
+import { Navigation, Pagination, Grid } from 'swiper/modules';
 
 const initNewsSlider = (isLoop, breakpointSettings) => {
   const swiperWrapper = document.querySelector('[data-swiper="news"]');
@@ -7,6 +8,7 @@ const initNewsSlider = (isLoop, breakpointSettings) => {
   const swiperPagination = document.querySelector('[data-swiper-pagination="news"]');
 
   const swiperOptions = {
+    modules: [Navigation, Pagination, Grid],
     loop: isLoop,
     navigation: {
       nextEl: swiperBtnNext,

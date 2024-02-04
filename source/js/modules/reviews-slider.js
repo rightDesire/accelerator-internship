@@ -1,4 +1,5 @@
-import {Swiper} from '../vendor';
+import {Swiper} from 'swiper';
+import { Navigation, Scrollbar } from 'swiper/modules';
 
 const initReviewsSlider = (isLoop, breakpointSettings) => {
   const swiperWrapper = document.querySelector('[data-swiper="reviews"]');
@@ -7,6 +8,7 @@ const initReviewsSlider = (isLoop, breakpointSettings) => {
   const swiperScrollBar = document.querySelector('[data-swiper-scrollbar="reviews"]');
 
   const swiperOptions = {
+    modules: [Navigation, Scrollbar],
     loop: isLoop,
     navigation: {
       nextEl: swiperBtnNext,

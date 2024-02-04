@@ -11,27 +11,29 @@
     position: relative;
     width: 498px;
     min-height: 803px;
-    padding: 70px 74px;
+    padding: 82px 74px;
+    padding-bottom: 41px;
     color: $color-default-white;
     background-color: $color-additional-text;
     border-radius: 16px;
     z-index: 1;
 
     @include vp-tablet {
+      width: 442px;
       min-height: 780px;
-      padding: 50px 45px;
+      padding: 61px 45px;
     }
 
     @include vp-mobile {
       min-width: 290px;
       min-height: 753px;
-      padding: 50px 15px;
+      padding: 53px 15px;
     }
   }
 }
 
 .contact-form__container {
-  margin-top: 30px;
+  margin-top: 29px;
 
   @include vp-mobile {
     margin-top: 25px;
@@ -51,7 +53,7 @@
 
 .contact-form__title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   color: $color-additional-text;
   font-size: 32px;
   font-weight: 400;
@@ -66,6 +68,7 @@
 
   @include vp-mobile {
     margin-bottom: 15px;
+
     font-size: 18px;
     line-height: 18px;
   }
@@ -90,7 +93,7 @@
 .contact-form__wrapper {
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
+  row-gap: 16px;
   margin-bottom: 30px;
 
   @include vp-mobile {
@@ -102,7 +105,7 @@
 .contact-form__input > label {
   display: flex;
   flex-direction: column-reverse;
-  row-gap: 12px;
+  row-gap: 8px;
 
   opacity: 0.8;
   font-size: 14px;
@@ -290,6 +293,11 @@
 
 .contact-form--alt .contact-form__submit {
   width: 350px;
+  justify-content: center;
+
+  &::after {
+    margin-left: auto;
+  }
 
   @include vp-tablet {
     width: 352px;
@@ -304,16 +312,20 @@
   word-wrap: break-word;
 }
 
+.contact-form--alt .contact-form__submit > span {
+  margin-left: auto;
+}
+
 .contact-form__input > textarea {
   width: 100%;
-  margin-top: 12px;
+  margin-top: 8px;
   padding: 15px;
   color: $color-default-white;
   border-radius: 8px;
   border-color: rgba(255, 255, 255, 0.3);
   background-color: transparent;
   transition: 0.3s border-color ease;
-  height: 120px;
+  height: 100px;
 
   @include hover-focus {
     border-color: $color-default-white;

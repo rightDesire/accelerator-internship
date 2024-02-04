@@ -1,12 +1,11 @@
 import {initHeroSlider} from '../../modules/hero-slider';
 import {initProgramsSlider} from '../../modules/programs-slider';
 import {initNewsSlider} from '../../modules/news-slider';
-import { initReviewsSlider } from '../../modules/reviews-slider';
+import {initReviewsSlider} from '../../modules/reviews-slider';
 
 const vpDesktop = 1440;
 const vpTablet = 768;
 const vpMobile = 320;
-const vpZero = 0;
 
 const loop = {
   hero: true,

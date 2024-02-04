@@ -11,7 +11,7 @@
 
   @include vp-mobile {
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 67px;
   }
 }
 
@@ -21,17 +21,24 @@
   column-gap: 40px;
   row-gap: 30px;
   margin-bottom: 40px;
-  padding-bottom: 40px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 31px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 
   @include vp-tablet {
     flex-direction: column;
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+  }
+
+  @include vp-mobile {
+    row-gap: 31px;
   }
 }
 
 .contacts__title {
   max-width: 250px;
   margin: 0;
+  padding-top: 4px; // Подгон
   text-align: start;
   word-wrap: break-word;
 
@@ -41,11 +48,16 @@
   line-height: 50px;
 
   @include vp-tablet {
+    margin-top: -1px;
+    padding-top: 0;
+
     font-size: 34px;
   }
 
   @include vp-mobile {
     max-width: 150px;
+    padding-top: 11px; // Подгон
+
     font-size: 20px;
     line-height: 20px;
   }
@@ -58,7 +70,7 @@
 
   @include vp-mobile {
     flex-direction: column;
-    gap: 20px;
+    gap: 13px;
   }
 }
 
@@ -68,7 +80,7 @@
 
 .contacts__dl dt {
   max-width: 130px;
-  margin-bottom: 24px;
+  margin-bottom: 14px;
   opacity: 0.8;
   word-wrap: break-word;
 
@@ -79,8 +91,12 @@
   letter-spacing: 0.12px;
   text-transform: uppercase;
 
+  @include vp-tablet {
+    margin-bottom: 18px;
+  }
+
   @include vp-mobile {
-    margin-bottom: 15px;
+    margin-bottom: 8px;
   }
 }
 
