@@ -60,7 +60,7 @@ export const burger = (ScrollLock, FocusLock) => {
   });
 
   body.addEventListener('click', (event) => {
-    if (!event.target.closest('[data-burger=""]') && header.classList.contains('is-open')) {
+    if (!event.target.closest('[data-burger=""]') && !event.target.closest('[data-content="burger"]') && header.classList.contains('is-open')) {
       closeMenu();
     }
   });
