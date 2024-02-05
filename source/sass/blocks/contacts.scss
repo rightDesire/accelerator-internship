@@ -127,3 +127,12 @@
     max-width: 230px;
   }
 }
+
+.contacts__dl a {
+  color: $color-default-white;
+
+  @include hover-focus {
+    outline: none;
+    opacity: 0.7;
+  }
+}

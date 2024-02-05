@@ -18,7 +18,7 @@
 .hero-swiper__pagination-wrapper > .hero-swiper__pagination {
   width: 94px;
   height: 38px;
-  border-radius: 12px 12px 0px 0px;
+  border-radius: 12px 12px 0 0;
   background-color: $color-default-white;
 
   @include vp-tablet {
@@ -26,7 +26,6 @@
   }
 
   @include vp-mobile {
-
     height: 28px;
   }
 

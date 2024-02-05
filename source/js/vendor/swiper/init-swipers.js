@@ -42,6 +42,7 @@ const breakpointsPrograms = {
   [vpDesktop]: {
     allowTouchMove: false,
     slidesPerView: initSlide.programsDesktop,
+    slidesPerGroup: 3,
     spaceBetween: 32,
     scrollbar: {
       dragSize: 392,
@@ -50,6 +51,7 @@ const breakpointsPrograms = {
   [vpTablet]: {
     allowTouchMove: true,
     slidesPerView: initSlide.programsTablet,
+    slidesPerGroup: 1,
     spaceBetween: 30,
     scrollbar: {
       dragSize: 324,
@@ -58,6 +60,7 @@ const breakpointsPrograms = {
   [vpMobile]: {
     allowTouchMove: true,
     slidesPerView: initSlide.programsMobile,
+    slidesPerGroup: 1,
     spaceBetween: 0,
   },
 };

@@ -92,11 +92,6 @@
         background-color: $color-additional-text;
       }
     }
-
-    &.focus-visible:focus {
-      color: $color-default-white;
-      background-color: $color-additional-text;
-    }
   }
 
   @media (hover: hover) {
@@ -115,6 +110,11 @@
     color: $color-default-white;
     background-color: $color-additional-text;
   }
+}
+
+.custom-select__item.focus-visible:focus {
+  color: $color-default-white;
+  background-color: $color-additional-text;
 }
 
 .custom-select__item span {

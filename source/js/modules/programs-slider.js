@@ -1,5 +1,5 @@
 import {Swiper} from 'swiper';
-import { Navigation, Scrollbar, Autoplay, Grid } from 'swiper/modules';
+import { Navigation, Scrollbar } from 'swiper/modules';
 
 const initProgramsSlider = (isLoop, breakpointSettings) => {
   const swiperWrapper = document.querySelector('[data-swiper="programs"]');

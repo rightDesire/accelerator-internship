@@ -60,9 +60,8 @@ export const burger = (ScrollLock, FocusLock) => {
   });
 
   body.addEventListener('click', (event) => {
-    if (!header.contains(event.target) && !burgerButton.contains(event.target)) {
-      header.classList.remove('is-open');
-      body.classList.remove('overlay');
+    if (!event.target.closest('[data-burger=""]') && header.classList.contains('is-open')) {
+      closeMenu();
     }
   });
 };

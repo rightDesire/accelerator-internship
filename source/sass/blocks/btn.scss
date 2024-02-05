@@ -50,30 +50,10 @@
     }
   }
 
-  &:disabled,
-  &.disabled {
-    color: $color-disabled;
-    background-color: transparent;
-    border-color: $color-disabled;
-    cursor: none;
-    pointer-events: none;
-
-    &::after {
-      background-color: $color-disabled;
-      background-image: url("/img/svg/arrow-btn.svg");
-    }
-  }
-
   &--alt {
     color: $color-default-white;
     border-color: $color-default-white;
     background-color: $color-additional-text;
-
-    &::after {
-      background-color: $color-default-white;
-      background-image: url("/img/svg/arrow-btn-alt.svg");
-      transform: rotate(-45deg);
-    }
 
     @include hover-focus {
       color: $color-additional-text;
@@ -97,20 +77,40 @@
         transform: rotate(45deg);
       }
     }
+  }
+}
 
-    &:disabled,
-    &.disabled {
-      color: $color-disabled;
-      background-color: transparent;
-      border-color: $color-disabled;
-      cursor: none;
-      pointer-events: none;
+.btn:disabled,
+.btn.disabled {
+  color: $color-disabled;
+  background-color: transparent;
+  border-color: $color-disabled;
+  cursor: none;
+  pointer-events: none;
 
-      &::after {
-        background-color: $color-disabled;
-        background-image: url("/img/svg/arrow-btn.svg");
-      }
-    }
+  &::after {
+    background-color: $color-disabled;
+    background-image: url("/img/svg/arrow-btn.svg");
+  }
+}
+
+.btn--alt::after {
+  background-color: $color-default-white;
+  background-image: url("/img/svg/arrow-btn-alt.svg");
+  transform: rotate(-45deg);
+}
+
+.btn--alt:disabled,
+.btn--alt.disabled {
+  color: $color-disabled;
+  background-color: transparent;
+  border-color: $color-disabled;
+  cursor: none;
+  pointer-events: none;
+
+  &::after {
+    background-color: $color-disabled;
+    background-image: url("/img/svg/arrow-btn.svg");
   }
 }
 

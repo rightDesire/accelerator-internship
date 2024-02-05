@@ -3,9 +3,6 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="cache-control" content="no-store, no-cache, must-revalidate, proxy-revalidate">
-    <meta http-equiv="pragma" content="no-cache">
-    <meta http-equiv="expires" content="0">
     <meta name="description" content="Третий проект в рамках акселератора">
     <title>Internship programs</title>
     <link rel="stylesheet" href="sass/style.scss">
@@ -16,14 +13,7 @@
     <link rel="manifest" href="manifest.webmanifest">
     <!-- Предзагрузка -->
     <link rel="preload" href="sass/style.scss" as="style">
-    <link rel="preload" as="image" href="img/content/hero/hero-img-mobile-1@1x.webp"
-      imagesrcset="img/content/hero/hero-img-mobile-1@1x.webp, img/content/hero/hero-img-mobile-1@2x.webp 2x" media="(min-width: 1px) and (max-width: 767px)" type="image/webp">
-    <link rel="preload" as="image" href="img/content/hero/hero-img-tablet-1@1x.webp"
-      imagesrcset="img/content/hero/hero-img-tablet-1@1x.webp, img/content/hero/hero-img-tablet-1@2x.webp 2x" media="(min-width: 768px) and (max-width: 1439px)" type="image/webp">
-    <link rel="preload" as="image" href="img/content/hero/hero-img-desktop-1@1x.webp"
-      imagesrcset="img/content/hero/hero-img-desktop-1@1x.webp, img/content/hero/hero-img-desktop-1@2x.webp 2x" media="(min-width: 1440px)" type="image/webp">
-    <link rel="preload" href="fonts/Manrope-Regular.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/Manrope-Medium.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="js/main.js" as="script">
   </head>
   <body>
     <h1 class="visually-hidden">Программа стажировки</h1>
@@ -38,65 +28,67 @@
               <span class="header__burger-text">Меню</span>
             </button>
           </div>
-          <nav class="header__nav" data-content="burger">
-            <ul class="header__list list">
-              <li class="header__item">
-                <a class="header__link" href="#">О проекте</a>
-              </li>
-              <li class="header__item">
-                <div class="header-accordion" data-accordion="parent" data-close-inner="">
-                  <div class="header-accordion__element" data-accordion="element">
-                    <button class="header-accordion__button header__accordion-link" type="button" data-accordion="button"><span>Программы</span></button>
-                    <div class="header-accordion__content" data-accordion="content">
-                      <ul class="header-accordion__list list">
-                        <li class="header-accordion__sub-item">
-                          <a class="header-accordion__sub-link" href="#">Стажировки</a>
-                        </li>
-                        <li class="header-accordion__sub-item">
-                          <a class="header-accordion__sub-link" href="#">Волонтёрство</a>
-                        </li>
-                        <li class="header-accordion__sub-item">
-                          <a class="header-accordion__sub-link" href="#">Учёба</a>
-                        </li>
-                        <li class="header-accordion__sub-item">
-                          <a class="header-accordion__sub-link" href="#">Религия</a>
-                        </li>
-                      </ul>
+          <div class="header__nav-wrapper">
+            <nav class="header__nav" data-content="burger">
+              <ul class="header__list list">
+                <li class="header__item">
+                  <a class="header__link" href="#">О проекте</a>
+                </li>
+                <li class="header__item">
+                  <div class="header-accordion" data-accordion="parent" data-close-inner="">
+                    <div class="header-accordion__element" data-accordion="element">
+                      <button class="header-accordion__button header__accordion-link" type="button" data-accordion="button"><span>Программы</span></button>
+                      <div class="header-accordion__content" data-accordion="content">
+                        <ul class="header-accordion__list list">
+                          <li class="header-accordion__sub-item">
+                            <a class="header-accordion__sub-link" href="#">Стажировки</a>
+                          </li>
+                          <li class="header-accordion__sub-item">
+                            <a class="header-accordion__sub-link" href="#">Волонтёрство</a>
+                          </li>
+                          <li class="header-accordion__sub-item">
+                            <a class="header-accordion__sub-link" href="#">Учёба</a>
+                          </li>
+                          <li class="header-accordion__sub-item">
+                            <a class="header-accordion__sub-link" href="#">Религия</a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </li>
-              <li class="header__item">
-                <a class="header__link" href="#">как поехать</a>
-              </li>
-              <li class="header__item">
-                <a class="header__link" href="#">отзывы</a>
-              </li>
-              <li class="header__item">
-                <div class="header-accordion" data-accordion="parent" data-close-inner="">
-                  <div class="header-accordion__element" data-accordion="element">
-                    <button class="header__accordion-link header-accordion__button" type="button" data-accordion="button"><span>Новости</span></button>
-                    <div class="header-accordion__content" data-accordion="content">
-                      <ul class="header-accordion__list list">
-                        <li class="header-accordion__sub-item">
-                          <a class="header-accordion__sub-link" href="#">Новость 1</a>
-                        </li>
-                        <li class="header-accordion__sub-item">
-                          <a class="header-accordion__sub-link" href="#">Новость 2</a>
-                        </li>
-                        <li class="header-accordion__sub-item">
-                          <a class="header-accordion__sub-link" href="#">Новость 3</a>
-                        </li>
-                      </ul>
+                </li>
+                <li class="header__item">
+                  <a class="header__link" href="#">как поехать</a>
+                </li>
+                <li class="header__item">
+                  <a class="header__link" href="#">отзывы</a>
+                </li>
+                <li class="header__item">
+                  <div class="header-accordion" data-accordion="parent" data-close-inner="">
+                    <div class="header-accordion__element" data-accordion="element">
+                      <button class="header__accordion-link header-accordion__button" type="button" data-accordion="button"><span>Новости</span></button>
+                      <div class="header-accordion__content" data-accordion="content">
+                        <ul class="header-accordion__list list">
+                          <li class="header-accordion__sub-item">
+                            <a class="header-accordion__sub-link" href="#">Новость 1</a>
+                          </li>
+                          <li class="header-accordion__sub-item">
+                            <a class="header-accordion__sub-link" href="#">Новость 2</a>
+                          </li>
+                          <li class="header-accordion__sub-item">
+                            <a class="header-accordion__sub-link" href="#">Новость 3</a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </li>
-              <li class="header__item">
-                <a class="header__link" href="#">контакты</a>
-              </li>
-            </ul>
-          </nav>
+                </li>
+                <li class="header__item">
+                  <a class="header__link" href="#">контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </header>
       <section class="hero">
@@ -201,7 +193,7 @@
       </section>
     </div>
     <main class="main">
-      <section class="about" data-test="about">
+      <section class="about" id="about" data-test="about">
         <div class="container about__container">
           <div class="about__wrapper">
             <div class="about__col-wrapper">
@@ -275,7 +267,7 @@
           </section>
         </div>
       </section>
-      <section class="programs" data-test="programs">
+      <section class="programs" id="programs" data-test="programs">
         <div class="container programs__wrapper">
             <h2 class="programs__title">
               Программы
@@ -467,7 +459,7 @@
           </div>
         </div>
       </section>
-      <section class="grant" data-test="grant">
+      <section class="grant" id="grant" data-test="grant">
         <div class="container grant__container">
           <div class="grant__col-wrapper">
             <h2 class="grant__title">
@@ -511,7 +503,7 @@
           </div>
         </div>
       </section>
-      <section class="news" data-test="news">
+      <section class="news" id="news" data-test="news">
         <div class="container">
           <h2 class="news__title">Новости и материалы</h2>
         </div>
@@ -856,7 +848,7 @@
           </div>
         </div>
       </section>
-      <section class="reviews" data-test="reviews">
+      <section class="reviews" id="reviews" data-test="reviews">
         <div class="container reviews__wrapper">
           <h2 class="reviews__title">
             Отзывы
@@ -1065,7 +1057,7 @@
           </div>
         </div>
       </section>
-      <section class="contacts" data-test="contacts">
+      <section class="contacts" id="contacts" data-test="contacts">
         <div class="container">
           <div class="contacts__row-wrapper">
             <h2 class="contacts__title">
@@ -1085,7 +1077,7 @@
                   Телефон
                 </dt>
                 <dd>
-                  +7 963 876 876 76
+                  <a href="tel:+796387687676">+7 963 876 876 76</a>
                 </dd>
               </dl>
               <dl class="contacts__dl">
@@ -1093,7 +1085,7 @@
                   Email
                 </dt>
                 <dd>
-                  Info@stazh.ru
+                  <a href="mailto:info@stazh.ru">Info@stazh.ru</a>
                 </dd>
               </dl>
             </div>
@@ -1106,7 +1098,7 @@
 
               <source media="(max-width: 767px)" type="image/png" srcset="img/content/map-img-mobile@1x.png 1x, img/content/map-img-mobile@2x.png 2x">
               <source media="(max-width: 1439px)" type="image/png" srcset="img/content/map-img-tablet@1x.png 1x, img/content/map-img-tablet@2x.png 2x">
-              <img src="img/content/map-img-desktop@1x.png" srcset="img/content/map-img-desktop@2x.png 2x" width="1240" height="500" loading="lazy" alt="Адрес на карте: г. Новосибирск, ул. Щетинкина 68, культурный центр.">
+              <img src="img/content/map-img-desktop@1x.png" srcset="img/content/map-img-desktop@2x.png 2x" width="1240" height="500" alt="Адрес на карте: г. Новосибирск, ул. Щетинкина 68, культурный центр.">
             </picture>
           </div>
         </div>
@@ -1156,7 +1148,7 @@
                       </div>
                       <div class="contact-form__checkbox contact-form__checkbox--alt" data-validate-type="checkbox">
                         <label>
-                          <input type="checkbox" value="true" name="contact-agreement" aria-invalid="true" checked>
+                          <input type="checkbox" value="true" name="contact-agreement" aria-invalid="true">
                           <span>Я согласен на обработку моих персональных данных</span>
                         </label>
                       </div>
@@ -1190,29 +1182,29 @@
           <nav class="footer__nav">
             <ul class="footer__list list">
               <li class="footer__item">
-                <a class="footer__link" href="#">О проекте</a>
+                <a class="footer__link" href="#about">О проекте</a>
               </li>
               <li class="footer__item">
-                <a class="footer__link" href="#">Программы</a>
+                <a class="footer__link" href="#programs">Программы</a>
               </li>
               <li class="footer__item">
-                <a class="footer__link" href="#">Как поехать</a>
+                <a class="footer__link" href="#grant">Как поехать</a>
               </li>
               <li class="footer__item">
-                <a class="footer__link" href="#">Отзывы</a>
+                <a class="footer__link" href="#reviews">Отзывы</a>
               </li>
               <li class="footer__item">
-                <a class="footer__link" href="#">Новости</a>
+                <a class="footer__link" href="#news">Новости</a>
               </li>
               <li class="footer__item">
-                <a class="footer__link" href="#">Контакты</a>
+                <a class="footer__link" href="#contacts">Контакты</a>
               </li>
             </ul>
           </nav>
         </div>
         <ul class="footer__social-list list">
           <li class="footer__social-item">
-            <a class="footer__social-link" href="#">
+            <a class="footer__social-link" href="#" target="_blank" rel="noopener noreferrer">
               <span class="visually-hidden">Вконтакте</span>
               <svg width="16" height="9">
                 <use href="/__spritemap#sprite-vk-icon" aria-hidden="true"></use>
@@ -1220,7 +1212,7 @@
             </a>
           </li>
           <li class="footer__social-item">
-            <a class="footer__social-link" href="#">
+            <a class="footer__social-link" href="#" target="_blank" rel="noopener noreferrer">
               <span class="visually-hidden">Одноклассники</span>
               <svg width="16" height="16">
                 <use href="/__spritemap#sprite-ok-icon" aria-hidden="true"></use>
@@ -1228,7 +1220,7 @@
             </a>
           </li>
           <li class="footer__social-item">
-            <a class="footer__social-link" href="#">
+            <a class="footer__social-link" href="#" target="_blank" rel="noopener noreferrer">
               <span class="visually-hidden">Рэддит</span>
               <svg width="16" height="16">
                 <use href="/__spritemap#sprite-reddit-icon" aria-hidden="true"></use>
@@ -1286,7 +1278,7 @@
                   </div>
                   <div class="contact-form__checkbox" data-validate-type="checkbox">
                     <label>
-                      <input type="checkbox" value="true" name="user-agreement" aria-invalid="true" checked>
+                      <input type="checkbox" value="true" name="user-agreement" aria-invalid="true">
                       <span>Я согласен на обработку моих персональных данных</span>
                     </label>
                   </div>

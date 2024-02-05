@@ -246,24 +246,69 @@
   line-height: 12px;
 }
 
-.contact-form__checkbox > label input {
+.contact-form__checkbox label > input {
   width: 20px;
   min-width: 20px;
   height: 20px;
 
-  // border: 1px solid transparent;
+  border: 1px solid rgba(72, 72, 72, 0.4);
   border-radius: 2px;
   outline: none;
   cursor: pointer;
+  appearance: none;
 
-  // @include hover-focus {
-  //   border-color: $color-main-text;
-  //   outline: none;
-  // }
+  &:disabled,
+  &--disabled {
+    background-color: (255, 255, 255, 0.6);
+  }
+
+  @include hover-focus {
+    border-color: $color-main-text;
+    outline: none;
+
+    &:checked {
+      background-color: $color-default-white;
+    }
+
+    &:checked::after {
+      background-color: $color-additional-text;
+    }
+  }
+
+  &:checked {
+    border-color: transparent;
+  }
+}
+
+.contact-form__checkbox--alt label > input {
+  border: 1px solid transparent;
+  border-color: rgba(255, 255, 255, 0.4);
+
+  &:disabled,
+  &--disabled {
+    background-color: (255, 255, 255, 0.6);
+  }
+
+  @include hover-focus {
+    border-color: $color-default-white;
+    outline: none;
+
+    &:checked {
+      border-color: $color-default-white;
+      background-color: $color-additional-text;
+    }
+
+    &:checked::after {
+      background-color: $color-default-white;
+    }
+  }
+
+  &:checked {
+    border-color: transparent;
+  }
 }
 
 .contact-form__checkbox.is-invalid > label input {
-  border-radius: 8px;
   border: 1px solid $color-error;
   background-color: rgba(255, 94, 102, 0.2);
 }
@@ -272,11 +317,6 @@
   position: relative;
   background-color: $color-additional-text;
   appearance: none;
-
-  @include hover-focus {
-    border-color: $color-main-text;
-    outline: none;
-  }
 
   &::after {
     content: "";
@@ -393,5 +433,6 @@
 
   @include vp-mobile {
     height: 94px;
+    margin-top: 11px;
   }
 }

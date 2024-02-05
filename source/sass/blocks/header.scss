@@ -32,7 +32,6 @@
 }
 
 .header.is-open .header__row-wrapper {
-  // transform: translateX(-8px);
   @include vp-mobile {
     justify-content: end;
   }
@@ -70,6 +69,7 @@
   line-height: 14px;
   letter-spacing: 0.28px;
   text-transform: uppercase;
+  z-index: 1000;
 
   &::after {
     content: "";
@@ -121,6 +121,10 @@
   }
 }
 
+.header__nav-wrapper {
+  position: relative;
+}
+
 .header__nav {
   background-color: $color-additional-text;
   border-radius: 16px;
@@ -145,12 +149,15 @@
 }
 
 .header.is-open .header__nav {
-  position: static;
+  position: absolute;
+  top: 4px; // Отступ
+  right: 0;
   width: 286px;
   height: auto;
   margin: 0;
-  margin-top: 4px;
-  margin-left: auto;
+
+  // margin-top: 4px;
+  // margin-left: auto;
   padding: 35px 25px;
   max-height: 398px;
   min-height: 283px;
@@ -183,7 +190,7 @@
 }
 
 .header__item:not(:last-child) {
-  margin-bottom: 17px; // Подгон
+  margin-bottom: 14px; // Подгон
 }
 
 .header__link {
