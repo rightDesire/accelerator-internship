@@ -44,6 +44,8 @@
 
 .reviews-slide__img-wrapper {
   margin-right: 15px;
+  font-size: 14px;
+  line-height: 18px;
 
   @include vp-mobile {
     margin-right: 10px;
@@ -174,6 +176,8 @@
   line-height: 18px;
 
   @include vp-mobile {
+    max-width: 115px;
+
     font-size: 12px;
     line-height: 14px;
   }

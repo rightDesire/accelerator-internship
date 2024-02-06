@@ -40,6 +40,7 @@
   line-height: 50px;
 
   @include vp-tablet {
+    max-width: 250px;
     margin-top: -2px; // Подгон
 
     font-size: 34px;
@@ -47,6 +48,7 @@
   }
 
   @include vp-mobile {
+    max-width: 150px;
     margin-top: 3px; // Подгон
 
     font-size: 20px;
@@ -65,7 +67,7 @@
   @include vp-mobile {
     position: absolute;
     bottom: 0;
-    left: 15px; // Container
+    left: 15px;
     width: 203px;
     height: 42px;
     min-height: 42px;
@@ -118,7 +120,7 @@
   }
 
   @include vp-mobile {
-    margin-bottom: 72px; // Размер месте с кнопкой
+    margin-bottom: 72px;
     padding-right: 15px;
     padding-left: 15px;
   }
@@ -147,6 +149,6 @@
   @include vp-mobile {
     position: absolute;
     top: 0;
-    right: 15px; // Container
+    right: 15px;
   }
 }

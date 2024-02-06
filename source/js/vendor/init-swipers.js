@@ -5,7 +5,7 @@ import {initReviewsSlider} from '../modules/reviews-slider';
 
 const vpDesktop = 1440;
 const vpTablet = 768;
-const vpMobile = 320;
+const vpMobile = 0;
 
 const loop = {
   hero: true,

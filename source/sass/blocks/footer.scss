@@ -68,11 +68,11 @@
   column-gap: 30px;
 
   @include vp-tablet {
-    column-gap: 15px;
+    gap: 15px;
+    flex-wrap: wrap;
   }
 
   @include vp-mobile {
-    flex-wrap: wrap;
     justify-content: center;
     column-gap: 30px;
     row-gap: 6px;

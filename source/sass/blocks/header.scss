@@ -52,7 +52,7 @@
   justify-content: space-between;
   align-items: center;
   width: 134px;
-  min-height: 54px;
+  height: 54px;
   padding: 4px;
   padding-left: 20px;
   color: $color-additional-text;
@@ -156,8 +156,6 @@
   height: auto;
   margin: 0;
 
-  // margin-top: 4px;
-  // margin-left: auto;
   padding: 35px 25px;
   max-height: 398px;
   min-height: 283px;

@@ -70,6 +70,7 @@
   position: relative;
   max-width: 80px;
   min-width: 78px;
+  margin-top: 136px;
   color: $color-additional-text;
   background-color: $color-dark-theme-text;
   padding: 11px 12px 2px 0;
@@ -106,6 +107,10 @@
     right: 0;
     bottom: 0;
     transform: translateX(100%);
+  }
+
+  @include vp-tablet {
+    margin-top: 0;
   }
 }
 
@@ -247,7 +252,7 @@
   }
 
   @include vp-mobile {
-    padding: 12px 10px 7px 0; ///
+    padding: 12px 10px 7px 0;
   }
 }
 
@@ -257,6 +262,7 @@
   max-width: 176px;
   margin: 0;
   word-wrap: break-word;
+  hyphens: auto; // По-другому не получилось
 
   font-size: 14px;
   line-height: 18px;
@@ -265,8 +271,6 @@
     max-width: 181px;
     max-height: 80px;
     min-height: 44px;
-    word-wrap: break-word;
-    hyphens: auto; // По-другому не получилось
 
     overflow-y: auto;
     overflow-x: hidden;
