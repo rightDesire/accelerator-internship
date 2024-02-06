@@ -1,31 +1,31 @@
 @mixin hover {
   @media (hover: hover) {
-    &:hover:not(:focus-visible) {
+    &:hover:not(.focus-visible) {
       @content;
     }
   }
 }
 
 @mixin focus {
-  &:focus-visible:focus {
+  &.focus-visible:focus {
     @content;
   }
 }
 
 @mixin active {
-  &:active:not(:focus-visible) {
+  &:active:not(.focus-visible) {
     @content;
   }
 }
 
 @mixin hover-focus {
   @media (hover: hover) {
-    &:hover:not(:focus-visible) {
+    &:hover:not(.focus-visible) {
       @content;
     }
   }
 
-  &:focus-visible:focus {
+  &.focus-visible:focus {
     @content;
   }
 }

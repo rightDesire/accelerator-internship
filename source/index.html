@@ -13,7 +13,6 @@
     <link rel="manifest" href="manifest.webmanifest">
     <!-- Предзагрузка -->
     <link rel="preload" href="sass/style.scss" as="style">
-    <link rel="preload" href="js/main.js" as="script">
   </head>
   <body>
     <h1 class="visually-hidden">Программа стажировки</h1>
@@ -509,35 +508,35 @@
         </div>
         <ul class="news__list-container news__list list">
           <li class="news__item">
-            <button class="news__nav-btn news__nav-btn--active" type="button" data-btn="news-nav">
+            <button class="news__nav-btn news__nav-btn--active" type="button" data-btn="news-nav" data-filter="all">
               <span>
                 Общее
               </span>
             </button>
           </li>
           <li class="news__item">
-            <button class="news__nav-btn" type="button" data-btn="news-nav">
+            <button class="news__nav-btn" type="button" data-btn="news-nav" data-filter="volunteering">
               <span>
                 Волонтёрство
               </span>
             </button>
           </li>
           <li class="news__item">
-            <button class="news__nav-btn" type="button" data-btn="news-nav">
+            <button class="news__nav-btn" type="button" data-btn="news-nav" data-filter="internships">
               <span>
                 Стажировки
               </span>
             </button>
           </li>
           <li class="news__item">
-            <button class="news__nav-btn" type="button" data-btn="news-nav">
+            <button class="news__nav-btn" type="button" data-btn="news-nav" data-filter="careers">
               <span>
                 Карьера
               </span>
             </button>
           </li>
           <li class="news__item">
-            <button class="news__nav-btn" type="button" data-btn="news-nav">
+            <button class="news__nav-btn" type="button" data-btn="news-nav" data-filter="travels">
               <span>
                 путешествия
               </span>
@@ -547,7 +546,7 @@
         <div class="container">
           <div class="swiper news-swiper" data-swiper="news">
             <div class="swiper-wrapper news-swiper__wrapper">
-              <div class="swiper-slide news-slide news-slide--big">
+              <div class="swiper-slide news-slide" data-category="internships">
                 <div class="news-slide__img-wrapper">
                   <picture>
                     <source media="(max-width: 767px)" type="image/webp" srcset="img/content/news/news-img-mobile-1@1x.webp 1x, img/content/news/news-img-mobile-1@2x.webp 2x">
@@ -580,7 +579,7 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide news-slide">
+              <div class="swiper-slide news-slide" data-category="travels">
                 <div class="news-slide__img-wrapper">
                   <picture>
                     <source media="(max-width: 767px)" type="image/webp" srcset="img/content/news/news-img-mobile-2@1x.webp 1x, img/content/news/news-img-mobile-2@2x.webp 2x">
@@ -613,7 +612,7 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide news-slide">
+              <div class="swiper-slide news-slide" data-category="volunteering">
                 <div class="news-slide__img-wrapper">
                   <picture>
                     <!-- <source media="(max-width: 767px)" type="image/webp" srcset="img/content/news/news-img-mobile-3@1x.webp 1x, img/content/news/news-img-mobile-3@2x.webp 2x"> -->
@@ -646,7 +645,7 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide news-slide">
+              <div class="swiper-slide news-slide" data-category="careers">
                 <div class="news-slide__img-wrapper">
                   <picture>
                     <!-- <source media="(max-width: 767px)" type="image/webp" srcset="img/content/news/news-img-mobile-4@1x.webp 1x, img/content/news/news-img-mobile-4@2x.webp 2x"> -->
@@ -681,7 +680,7 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide news-slide">
+              <div class="swiper-slide news-slide" data-category="internships">
                 <div class="news-slide__img-wrapper">
                   <picture>
                     <source media="(max-width: 767px)" type="image/webp" srcset="img/content/news/news-img-mobile-1@1x.webp 1x, img/content/news/news-img-mobile-1@2x.webp 2x">
@@ -714,7 +713,7 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide news-slide">
+              <div class="swiper-slide news-slide" data-category="travels">
                 <div class="news-slide__img-wrapper">
                   <picture>
                     <source media="(max-width: 767px)" type="image/webp" srcset="img/content/news/news-img-mobile-2@1x.webp 1x, img/content/news/news-img-mobile-2@2x.webp 2x">
@@ -747,7 +746,7 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide news-slide">
+              <div class="swiper-slide news-slide" data-category="volunteering">
                 <div class="news-slide__img-wrapper">
                   <picture>
                     <!-- <source media="(max-width: 767px)" type="image/webp" srcset="img/content/news/news-img-mobile-3@1x.webp 1x, img/content/news/news-img-mobile-3@2x.webp 2x"> -->

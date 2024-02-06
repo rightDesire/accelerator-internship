@@ -1,7 +1,8 @@
+import './vendor/focus-visible-polyfill';
 import {iosVhFix} from './utils/ios-vh-fix';
 import {burger} from './modules/burger';
 import {initAccordions} from './vendor/accordion/init-accordion';
-import {initSliders} from './vendor/swiper/init-swipers';
+import {initSliders} from './vendor/init-swipers';
 import {Form} from './vendor/form-validate/form';
 import {ScrollLock} from './utils/scroll-lock';
 import {FocusLock} from './utils/focus-lock';
