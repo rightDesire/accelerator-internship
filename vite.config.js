@@ -30,12 +30,8 @@ export default {
                   utilizeAbsolute: false,
                 },
                 removeViewBox: false, // https://github.com/svg/svgo/issues/1128
+                cleanupIds: false,
               },
-              cleanupIDs: {
-                minify: false,
-                remove: false,
-              },
-              convertPathData: false
             },
           },
           'removeDimensions',
@@ -69,6 +65,7 @@ export default {
   build: {
     outDir: '../dist',
   },
+  base: './',
   server: {
     host: true,
     port: 3000,
